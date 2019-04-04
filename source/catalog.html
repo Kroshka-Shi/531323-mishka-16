@@ -82,6 +82,30 @@
         </div>
       </section>
     </footer>
+
+    <section class="modal">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p>Выберите размер:</p>
+      <form name="size" method="get" action="https://echo.htmlacademy.ru">
+        <ul class="modal__choose">
+          <li class="modal__choose--item">
+          <input type="radio" name="size__item" value="S" id="size__S">
+          <label for="size__S">S</label>
+          </li>
+
+          <li class="modal__choose--item">
+          <input type="radio" name="size__item" value="M" id="size__M">
+          <label for="size__M">M</label>
+          </li>
+
+          <li class="modal__choose--item">
+          <input type="radio" name="size__item" value="L" id="size__L">
+          <label for="size__L">L</label>
+          </li>
+     </ul>
+        <button class="modal_btn" type="submit">Добавить</button>
+      </form>
+    </section>
   </main>
 
 </body></html>
