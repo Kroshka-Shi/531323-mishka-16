@@ -2,136 +2,136 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Мишка</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
 </head>
 
 <body>
-	<header class="header">
-		<a class="header__logo" href="index.html"> <img class="header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
+  <header class="header">
+    <a class="header__logo" href="index.html"> <img class="header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
 
-		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button"></button>
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-				<li class="site-list__item"><a href="#">Вязание на заказ</a></li>
-				<li class="site-list__item"><a href="#">Новые поступления</a></li>
-				<li class="site-list__item"><a href="#">Распродажа</a></li>
-			</ul>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
+        <li class="site-list__item"><a href="#">Новые поступления</a></li>
+        <li class="site-list__item"><a href="#">Распродажа</a></li>
+      </ul>
 
-			<ul class="main-nav__list cart-list">
-				<li class="cart-list__item"><a href="#">Корзина</a></li>
-				<li class="cart-list__item"><a href="#">Поиск</a></li>
-			</ul>
-			<p>Бесплатная доставка по России</p>
-		</nav>
-	</header>
+      <ul class="main-nav__list cart-list">
+        <li class="cart-list__item"><a href="#">Корзина</a></li>
+        <li class="cart-list__item"><a href="#">Поиск</a></li>
+      </ul>
+      <p>Бесплатная доставка по России</p>
+    </nav>
+  </header>
 
-	<main>
-		<h1>Вязание на заказ</h1>
-		<p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+  <main>
+    <h1>Вязание на заказ</h1>
+    <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-		<form class="order" method="get" action="https://echo.htmlacademy.ru">
-			<fieldset class="order__fieldset">
-				<legend>Тип</legend>
-				<ul class="order__type type">
-					<li>
-						<input class="type__item" type="radio" name="type" id="interior" value="interior" checked>
-						<label for="interior">Аксессуар для интерьера</label>
-					</li>
-					<li>
-						<input class="type__item" type="radio" name="type" id="toy" value="toy">
-						<label for="toy">Детская игрушка</label>
-					</li>
-				</ul>
-			</fieldset>
+    <form class="order" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="order__fieldset">
+        <legend>Тип</legend>
+        <ul class="order__type type">
+          <li>
+            <input class="type__item" type="radio" name="type" id="interior" value="interior" checked>
+            <label for="interior">Аксессуар для интерьера</label>
+          </li>
+          <li>
+            <input class="type__item" type="radio" name="type" id="toy" value="toy">
+            <label for="toy">Детская игрушка</label>
+          </li>
+        </ul>
+      </fieldset>
 
-			<fieldset class="order__fieldset">
-				<legend>Цвет</legend>
+      <fieldset class="order__fieldset">
+        <legend>Цвет</legend>
 
-				<ul class="order__color color">
-					<li>
-						<input class="color__item" type="checkbox" name="color" id="white" value="white" checked>
-						<label for="white">Белый</label>
-					</li>
+        <ul class="order__color color">
+          <li>
+            <input class="color__item" type="checkbox" name="color" id="white" value="white" checked>
+            <label for="white">Белый</label>
+          </li>
 
-					<li>
-						<input class="color__item" type="checkbox" name="color" id="gray" value="gray" checked>
-						<label for="gray">Серый</label>
-					</li>
+          <li>
+            <input class="color__item" type="checkbox" name="color" id="gray" value="gray" checked>
+            <label for="gray">Серый</label>
+          </li>
 
-					<li>
-						<input class="color__item" type="checkbox" name="color" id="tiffany" value="tiffany">
-						<label for="tiffany">"Тиффани"</label>
-					</li>
+          <li>
+            <input class="color__item" type="checkbox" name="color" id="tiffany" value="tiffany">
+            <label for="tiffany">"Тиффани"</label>
+          </li>
 
-					<li>
-						<input class="color__item" type="checkbox" name="color" id="black" value="black">
-						<label for="black">Черный</label>
-					</li>
+          <li>
+            <input class="color__item" type="checkbox" name="color" id="black" value="black">
+            <label for="black">Черный</label>
+          </li>
 
-					<li>
-						<input class="color__item" type="checkbox" name="color" id="pink" value="pink">
-						<label for="pink">Розовый</label>
-					</li>
+          <li>
+            <input class="color__item" type="checkbox" name="color" id="pink" value="pink">
+            <label for="pink">Розовый</label>
+          </li>
 
-					<li>
-						<input class="color__item" type="checkbox" name="color" id="orange" value="orange">
-						<label for="orange">Оранжевый</label>
-					</li>
-				</ul>
-			</fieldset>
+          <li>
+            <input class="color__item" type="checkbox" name="color" id="orange" value="orange">
+            <label for="orange">Оранжевый</label>
+          </li>
+        </ul>
+      </fieldset>
 
-			<fieldset class="order__fieldset">
-				<legend>ФИО</legend>
-				<p class="order__personal personal">
-					<label for="name">Имя:</label>
-					<input class="personal__item" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-				</p>
+      <fieldset class="order__fieldset">
+        <legend>ФИО</legend>
+        <p class="order__personal personal">
+          <label for="name">Имя:</label>
+          <input class="personal__item" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+        </p>
 
-				<p class="order__personal personal">
-					<label for="last-name">Фамилия:</label>
-					<input class="personal__item" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
-				</p>
+        <p class="order__personal personal">
+          <label for="last-name">Фамилия:</label>
+          <input class="personal__item" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
+        </p>
 
-				<p class="order__personal personal">
-					<label for="patron">Отчество:</label>
-					<input class="personal__item" type="text" name="patron" id="patron" placeholder="Отчество, если желаете" required>
-				</p>
-			</fieldset>
-			<fieldset class="order__fieldset">
-				<legend>Тел</legend>
-				<input class="order__email" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-			</fieldset>
+        <p class="order__personal personal">
+          <label for="patron">Отчество:</label>
+          <input class="personal__item" type="text" name="patron" id="patron" placeholder="Отчество, если желаете" required>
+        </p>
+      </fieldset>
+      <fieldset class="order__fieldset">
+        <legend>Тел</legend>
+        <input class="order__email" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+      </fieldset>
 
-			<fieldset class="order__fieldset">
-				<legend>e-mail</legend>
-				<input class="order__email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-			</fieldset>
+      <fieldset class="order__fieldset">
+        <legend>e-mail</legend>
+        <input class="order__email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+      </fieldset>
 
-			<fieldset class="order__fieldset">
-				<legend>доп</legend>
-				<textarea class="order__wishes" id="order__wishes" name="wishes" rows="5">Опишите все ваши пожелания к заказу</textarea>
-			</fieldset>
-			<span>*Поля обязательные для заполнения</span>
-			<button class="order__btn" type="submit">Отправить заказ</button>
-		</form>
+      <fieldset class="order__fieldset">
+        <legend>доп</legend>
+        <textarea class="order__wishes" id="order__wishes" name="wishes" rows="5">Опишите все ваши пожелания к заказу</textarea>
+      </fieldset>
+      <span>*Поля обязательные для заполнения</span>
+      <button class="order__btn" type="submit">Отправить заказ</button>
+    </form>
 
-		<footer class="footer">
-			<a href="index.html"><img class="footer__pic" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
-			<section class="footer__social">
-				<ul class="footer__social-list soc-list">
-					<li class="soc-list__item soc-list__item--insta"><a href="#">Insta</a></li>
-					<li class="soc-list__item soc-list__item--fb"><a href="#">FB</a></li>
-					<li class="soc-list__item soc-list__item--tw"><a href="#">Tw</a></li>
-				</ul>
-				<div class="footer__wrap">
-					<a href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__develop">Разработанно</span>
-						<img class="footer__develop footer__develop--pic" src="http://placehold.it/150x100" width="27" height="34" alt="HTMLacademy"></a>
-				</div>
-			</section>
-		</footer>
-	</main>
+    <footer class="footer">
+      <a href="index.html"><img class="footer__pic" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
+      <section class="footer__social">
+        <ul class="footer__social-list soc-list">
+          <li class="soc-list__item soc-list__item--insta"><a href="#">Insta</a></li>
+          <li class="soc-list__item soc-list__item--fb"><a href="#">FB</a></li>
+          <li class="soc-list__item soc-list__item--tw"><a href="#">Tw</a></li>
+        </ul>
+        <div class="footer__wrap">
+          <a href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__develop">Разработанно</span>
+            <img class="footer__develop footer__develop--pic" src="http://placehold.it/150x100" width="27" height="34" alt="HTMLacademy"></a>
+        </div>
+      </section>
+    </footer>
+  </main>
 </body>
 
 </html>
