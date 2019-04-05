@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -74,23 +75,81 @@
         <li class="advantages__item">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
+    <article class="comment">
+      <h2 class="comment__title">Отзывы</h2>
+      <blockquote class="comment__item">
+        <p class="comment__text">Я молодая мама, но все равно фотографии не набирали и близко
+          такого количества лайков, как у популярных инстамамочек.
+          В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+          и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <cite class="comment__autor"><strong>Анастасия Красильникова</strong></cite>
+        <span class="comment__autor-tag">@misssssiskras</span>
+      </blockquote>
+      <div class="comment__pagination">
+        <button class="comment__pagination-left" type="submit">Предыдущий отзыв</button>
+        <button class="comment__pagination-right" type="submit">Следующий отзыв</button>
+      </div>
 
+      <a class="comment_btn" href="#">Написать</a>
+    </article>
+
+    <section class="contact">
+      <table class="contacts_info">
+        <tr>
+          <td>e-mail:</td>
+          <td>info@mimimishkashop.ru</td>
+        </tr>
+        <tr>
+          <td>адрес:</td>
+          <td>г. Санкт- Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+        </tr>
+      </table>
+      <div class="contact_map">
+        <img src="http://placehold.it/150x100" width="320" height="457" alt="Как попасть к нам">
+      </div>
+      <a class="contact_btn" href="#">Напишите нам</a>
+    </section>
 
     <footer class="footer">
       <a><img class="footer__pic" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
       <section class="footer__social">
         <ul class="footer__social-list soc-list">
-          <li class="soc-list__item soc-list__item--insta"><a  href="#">Insta</a></li>
-          <li class="soc-list__item soc-list__item--fb"><a  href="#">FB</a></li>
-          <li class="soc-list__item soc-list__item--tw"><a  href="#">Tw</a></li>
+          <li class="soc-list__item soc-list__item--insta"><a href="#">Insta</a></li>
+          <li class="soc-list__item soc-list__item--fb"><a href="#">FB</a></li>
+          <li class="soc-list__item soc-list__item--tw"><a href="#">Tw</a></li>
         </ul>
         <div class="footer__wrap">
-         <a href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__develop">Разработанно</span>
-          <img class="footer__develop footer__develop--pic" src="http://placehold.it/150x100" width="27" height="34" alt="HTMLacademy"></a>
+          <a href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__develop">Разработанно</span>
+            <img class="footer__develop footer__develop--pic" src="http://placehold.it/150x100" width="27" height="34" alt="HTMLacademy"></a>
         </div>
       </section>
     </footer>
+
+    <section class="modal">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p>Выберите размер:</p>
+      <form name="size" method="get" action="https://echo.htmlacademy.ru">
+        <ul class="modal__choose size">
+          <li class="size__item">
+            <input type="radio" name="size__item" value="S" id="size__S">
+            <label for="size__S">S</label>
+          </li>
+
+          <li class="size__item">
+            <input type="radio" name="size__item" value="M" id="size__M">
+            <label for="size__M">M</label>
+          </li>
+
+          <li class="size__item">
+            <input type="radio" name="size__item" value="L" id="size__L">
+            <label for="size__L">L</label>
+          </li>
+        </ul>
+        <button class="modal_btn" type="submit">Добавить</button>
+      </form>
+    </section>
   </main>
 
 </body>
+
 </html>
