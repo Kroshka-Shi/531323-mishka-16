@@ -42,11 +42,26 @@
 
 .popular-item__description {
 	font-size: $f-size -2;
+	color: $gray;
 	font-family: 'OpenSansNormal';
 }
 
 .popular-item__specification {
 	font-size: $f-size -2;
+	color: $gray;
 	line-height: $f-height -4;
 	font-family: 'OpenSansNormal';
+}
+
+.popular-item__pic {
+	margin-bottom: 30px;
+}
+
+.popular-item__price {
+	color: $gray;
+	display: block;
+}
+
+.popular-item__buton {
+	margin-top: 30px;
 }
