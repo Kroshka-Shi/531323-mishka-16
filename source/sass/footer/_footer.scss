@@ -1,23 +1,21 @@
 .footer {
-	background-color: $light-gray;
+  background-color: $light-gray;
 }
 
 .footer__social-list {
-	border-bottom: 1px #e5e5e5 solid;
+  border-bottom: 1px #e5e5e5 solid;
 }
 
 .soc-list__item {
-
-	a {
-		color: $black;
-	}
+  a {
+    color: $black;
+  }
 }
 
 .footer__wrap {
-	margin-left: 40px;
-	height: 60px;
-
-	a {
-		color: $black;
-	}
+  a {
+    color: $black;
+  }
+  margin-left: 40px;
+  height: 60px;
 }

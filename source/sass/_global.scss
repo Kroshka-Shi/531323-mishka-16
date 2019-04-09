@@ -1,22 +1,20 @@
 @font-face {
-	font-family: 'OpenSansNormal';
-	src: url('../fonts/opensans.woff2') format('woff2'),
-		url(',,/fonts/opensans.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "OpenSansNormal";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'OpenSansBold';
-	src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
+  font-family: "OpenSansBold";
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 $f-size: 17px;
-$f-family: Open Sans,
-Arial,
-sans-serif;
 $f-height: 24px;
 
 
@@ -37,47 +35,47 @@ $light-gray: #f1f1f1;
 
 
 html {
-	margin: 0;
-	padding: 0;
-	width: 320px;
-	font-size: $f-size;
-	line-height: $f-height;
-	font-family: 'OpenSansBold';
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  font-size: $f-size;
+  line-height: $f-height;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 .container {
-	width: 320px;
-	box-sizing: border-box;
-	margin: 0 auto;
-	padding: 0 30px;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .page-button {
-	border: 2px $gray solid;
-	display: block;
-	width: 260px;
-	padding: 13px 0;
-	text-align: center;
-	text-transform: uppercase;
-	color: $gray;
+  border: 2px $gray solid;
+  display: block;
+  width: 260px;
+  padding: 13px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gray;
 }

@@ -1,67 +1,67 @@
 .product__title {
-	position: relative;
-	font-size: $f-size+1;
-	line-height: $f-height+6;
-	display: flex;
-	justify-content: center;
-	background: url(../../img/hero-mobile@1x.jpg) no-repeat center;
-	height: 282px;
-	background-position: 50% 20%;
-	letter-spacing: 0.8;
+  position: relative;
+  font-size: $f-size+1;
+  line-height: $f-height+6;
+  display: flex;
+  justify-content: center;
+  background: url("../../img/hero-mobile@1x.jpg") no-repeat center;
+  height: 282px;
+  background-position: 50% 20%;
+  letter-spacing: 0.8;
 
-	h1 {
-		margin-top: 70px;
-		text-align: center;
-	}
+  h1 {
+    margin-top: 70px;
+    text-align: center;
+  }
 }
 
 .product__item--wraper {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 
-	:nth-child(2) {
-		background-color: $dark-tiffany;
-	}
+  :nth-child(2) {
+    background-color: $dark-tiffany;
+  }
 }
 
 .product__item {
-	font-size: $f-size +2;
-	line-height: $f-height -1;
-	color: $white;
-	background-color: $tiffany;
-	height: 103px;
-	padding-top: 28px;
-	padding-left: 30px;
+  font-size: $f-size +2;
+  line-height: $f-height -1;
+  color: $white;
+  background-color: $tiffany;
+  height: 103px;
+  padding-top: 28px;
+  padding-left: 30px;
 }
 
 .popular-item__marker {
-	color: $tiffany;
-	text-transform: uppercase;
+  color: $tiffany;
+  text-transform: uppercase;
 }
 
 .popular-item__description {
-	font-size: $f-size -2;
-	color: $gray;
-	font-family: 'OpenSansNormal';
+  font-size: $f-size -2;
+  color: $gray;
+  font-family: $f-normal;
 }
 
 .popular-item__specification {
-	font-size: $f-size -2;
-	color: $gray;
-	line-height: $f-height -4;
-	font-family: 'OpenSansNormal';
+  font-size: $f-size -2;
+  color: $gray;
+  line-height: $f-height -4;
+  font-family: $f-normal;
 }
 
 .popular-item__pic {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .popular-item__price {
-	color: $gray;
-	display: block;
+  color: $gray;
+  display: block;
 }
 
 .popular-item__buton {
-	margin-top: 30px;
+  margin-top: 30px;
 }
