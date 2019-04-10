@@ -3,18 +3,13 @@
 }
 
 .footer__social-list {
+  @include indents-zero();
   border-bottom: 1px #e5e5e5 solid;
-}
-
-.soc-list__item {
-  a {
-    color: $black;
-  }
 }
 
 .footer__wrap {
   a {
-    color: $black;
+    @include a-zero();
   }
   margin-left: 40px;
   height: 60px;

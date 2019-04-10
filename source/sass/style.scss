@@ -1,7 +1,11 @@
+@import "variables";
+@import "mixin";
 @import "global";
-@import "header/header";
-@import "main-nav/main-nav";
-@import "product/product";
-@import "advantages/advantages";
-@import "footer/footer";
-@import "catalog/catalog";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/product";
+@import "blocks/advantages";
+@import "blocks/footer";
+@import "blocks/catalog";
+@import "blocks/cart-product";
+@import "blocks/button";

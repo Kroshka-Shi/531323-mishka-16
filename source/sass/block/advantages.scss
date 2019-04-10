@@ -1,3 +1,7 @@
+.advantages__list {
+  @include indents-zero();
+}
+
 .advantages__title {
   margin-left: 30px;
   margin-top: 85px;

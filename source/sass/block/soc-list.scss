@@ -1,0 +1,5 @@
+.soc-list__item {
+  a {
+    @include a-zero();
+  }
+}

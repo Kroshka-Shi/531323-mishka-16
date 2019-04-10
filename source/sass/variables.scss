@@ -14,9 +14,8 @@
   font-style: normal;
 }
 
-$f-size: 17px;
-$f-height: 24px;
-
+$f-normal:"OpenSansNormal", "Arial", sans-serif;
+$f-bold:"OpenSansBold", "Arial", sans-serif;
 
 $black:rgba(0, 0, 0, 1);
 $black-o60: rgba(0, 0, 0, 0.6);
@@ -32,50 +31,3 @@ $dark-t-o30: rgba(70, 193, 174, 0.3);
 $dark-t-o20: rgba(70, 193, 174, 0.3);
 $gray: #444444;
 $light-gray: #f1f1f1;
-
-
-html {
-  margin: 0;
-  padding: 0;
-  width: 320px;
-  font-size: $f-size;
-  line-height: $f-height;
-  font-family: "OpenSansBold", "Arial", sans-serif;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-.container {
-  width: 320px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.page-button {
-  border: 2px $gray solid;
-  display: block;
-  width: 260px;
-  padding: 13px 0;
-  text-align: center;
-  text-transform: uppercase;
-  color: $gray;
-}
