@@ -1,0 +1,28 @@
+html {
+  @include a-zero();
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: $f-bold;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+}

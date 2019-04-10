@@ -1,0 +1,16 @@
+.cart-list {
+  margin: 0;
+  padding: 0;
+}
+
+
+.cart-list__item {
+  border-bottom: 1px #ececec solid;
+
+  a {
+    @include a-zero();
+    padding-left: 76px;
+    display: block;
+    margin: 30px 0;
+  }
+}

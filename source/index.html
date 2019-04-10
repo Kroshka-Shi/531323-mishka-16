@@ -4,14 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
   <header class="header">
-    <a class="header__logo"> <img class="header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
+    <a class="header__logo"> <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
+    <button class="header__toggle" type="button"></button>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
+
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
@@ -23,56 +26,59 @@
         <li class="cart-list__item"><a href="#">Корзина</a></li>
         <li class="cart-list__item"><a href="#">Поиск</a></li>
       </ul>
-      <p>Бесплатная доставка по России</p>
+      <p class="main-nav__deliver">Бесплатная доставка по России</p>
     </nav>
   </header>
 
+
   <main>
+
     <section class="product">
       <div class="product__title">
-        <h1>Милые штуки ручной работы для дома</h1>
+        <h1>Милые штуки<br> ручной<br> работы для дома</h1>
       </div>
 
       <div class="product__list">
-        <a class="product__item" href="#">Предметы интерьера</a>
-        <a class="product__item" href="#">Детские игрушки</a>
+        <div class="product__item--wraper"><a class="product__item" href="#">Предметы <br>интерьера</a>
+          <a class="product__item" href="#">Детские <br>игрушки</a></div>
+        <div class="container">
+          <article class="product__popular popular-item">
+            <h2 class="popular-item__title">Вязаные корзинки</h2>
+            <span class="popular-item__marker">Товар недели</span>
+            <p class="popular-item__description">Экологически чистая пряжа, ручная работа.Доступны в шести расцветках, и трех размерах.</p>
 
-        <article class="product__popular popular-item">
-          <h2 class="popular-item__title">Вязаные корзинки</h2>
-          <span class="popular-item__marker">Товар недели</span>
-          <p class="popular-item__description">Экологически чистая пряжа, ручная работа.Доступны в шести расцветках, и трех размерах.</p>
+            <table class="popular-item__specification">
+              <tr>
+                <td>Цвет:</td>
+                <td>"Тиффани"/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
 
-          <table class="popular-item__specification">
-            <tr>
-              <td>Цвет:</td>
-              <td>"Тиффани"/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-
-          <img class="popular-item__pic" src="http://placehold.it/150x100" width="260" height="315" alt="Вязаные корзинки">
-          <span class="popular-item__price">Цена: 990 руб.</span>
-          <a class="popular-item__button page-button">Заказать</a>
-        </article>
+            <img class="popular-item__pic" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+            <span class="popular-item__price">Цена: 990 руб.</span>
+            <a class="popular-item__button page-button">Заказать</a>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="advantages">
       <h2 class="advantages__title">Коротко о нас:</h2>
       <ul class="advantages__list">
-        <li class="advantages__item">Экологически чистые материалы</li>
-        <li class="advantages__item">Скандинавский стиль по российской цене</li>
-        <li class="advantages__item">Увеличивает лайки на фотографиях</li>
-        <li class="advantages__item">Связано вручную с любовью и умилением</li>
+        <li class="advantages__item">Экологически <br> чистые материалы</li>
+        <li class="advantages__item">Скандинавский стиль<br> по российской цене</li>
+        <li class="advantages__item">Увеличивает лайки <br> на фотографиях</li>
+        <li class="advantages__item">Связано вручную с <br> любовью и умилением</li>
         <li class="advantages__item">Поддержка отечественного производителя</li>
-        <li class="advantages__item">Поставляется в подарочной упаковке</li>
+        <li class="advantages__item">Поставляется <br>в подарочной упаковке</li>
       </ul>
     </section>
     <article class="comment">
@@ -90,7 +96,7 @@
         <button class="comment__pagination-right" type="submit">Следующий отзыв</button>
       </div>
 
-      <a class="comment_btn" href="#">Написать</a>
+      <a class="page-button comment_btn" href="#">Написать</a>
     </article>
 
     <section class="contact">
@@ -107,22 +113,24 @@
       <div class="contact_map">
         <img src="http://placehold.it/150x100" width="320" height="457" alt="Как попасть к нам">
       </div>
-      <a class="contact_btn" href="#">Напишите нам</a>
+      <a class="page-button contact_btn" href="#">Напишите нам</a>
     </section>
 
     <footer class="footer">
-      <a><img class="footer__pic" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
-      <section class="footer__social">
-        <ul class="footer__social-list soc-list">
-          <li class="soc-list__item soc-list__item--insta"><a href="#">Insta</a></li>
-          <li class="soc-list__item soc-list__item--fb"><a href="#">FB</a></li>
-          <li class="soc-list__item soc-list__item--tw"><a href="#">Tw</a></li>
-        </ul>
-        <div class="footer__wrap">
-          <a href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__develop">Разработанно</span>
-            <img class="footer__develop footer__develop--pic" src="http://placehold.it/150x100" width="27" height="34" alt="HTMLacademy"></a>
-        </div>
-      </section>
+      <div class="container">
+        <a><img class="footer__pic" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
+        <section class="footer__social">
+          <ul class="footer__social-list soc-list">
+            <li class="soc-list__item soc-list__item--insta"><a href="#">Insta</a></li>
+            <li class="soc-list__item soc-list__item--fb"><a href="#">FB</a></li>
+            <li class="soc-list__item soc-list__item--tw"><a href="#">Tw</a></li>
+          </ul>
+          <div class="footer__wrap">
+            <a href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__develop">Разработанно</span>
+              <img class="footer__develop footer__develop--pic" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLacademy"></a>
+          </div>
+        </section>
+      </div>
     </footer>
 
     <section class="modal">
@@ -149,7 +157,5 @@
       </form>
     </section>
   </main>
-
 </body>
-
 </html>
