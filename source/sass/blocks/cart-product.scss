@@ -1,0 +1,40 @@
+.cart-product__img {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.cart-product {
+  a {
+    @include a-zero();
+  }
+}
+
+.cart-product__wrap {
+  margin-left: 30px;
+  width: 200px;
+}
+
+.cart-product__title {
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+.cart-product_desc {
+  margin: 0;
+  line-height: 36px;
+  font-size: 14px;
+  font-family: $f-normal;
+  padding-bottom: 25px;
+  border-bottom: 1px #ececec solid;
+}
+
+.cart-product__price {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  margin-left: 30px;
+  padding: 20px 0;
+}

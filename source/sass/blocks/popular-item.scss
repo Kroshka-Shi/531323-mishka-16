@@ -1,0 +1,41 @@
+.popular-item__title {
+  margin: 0;
+}
+
+.popular-item__marker {
+  display: block;
+  color: $tiffany;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.popular-item__description {
+  font-size: 15px;
+  color: $gray;
+  font-family: $f-normal;
+  padding-top: 20px;
+}
+
+.popular-item__specification {
+  tr {
+    border-bottom: 1px #ececec solid;
+  }
+  font-size: 15px;
+  color: $gray;
+  line-height: 26px;
+  font-family: $f-normal;
+}
+
+.popular-item__pic {
+  margin-bottom: 30px;
+}
+
+.popular-item__price {
+  align-content: center;
+  color: $gray;
+  display: block;
+}
+
+.popular-item__button {
+  margin-top: 30px;
+}

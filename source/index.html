@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -10,23 +11,25 @@
 
 <body>
   <header class="header">
-    <a class="header__logo"> <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
-    <button class="header__toggle" type="button"></button>
+    <div class="header__top">
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
+      <button class="header__toggle" type="button"></button>
+    </div>
 
     <nav class="main-nav">
-
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
-        <li class="site-list__item"><a href="#">Новые поступления</a></li>
-        <li class="site-list__item"><a href="#">Распродажа</a></li>
+        <li class="site-list__item site-list__item--marker"><a href="#">Новые поступления</a></li>
+        <li class="site-list__item site-list__item--marker"><a href="#">Распродажа</a></li>
       </ul>
 
       <ul class="main-nav__list cart-list">
-        <li class="cart-list__item"><a href="#">Корзина</a></li>
-        <li class="cart-list__item"><a href="#">Поиск</a></li>
+        <li class="cart-list__item"><a href="#">Корзина: пока пуста</a></li>
+        <li class="cart-list__item"><a href="#">Поиск по сайту</a></li>
       </ul>
-      <p class="main-nav__deliver">Бесплатная доставка по России</p>
+      <p class="main-nav__deliver hidden">Бесплатная доставка по России</p>
     </nav>
   </header>
 
@@ -34,52 +37,58 @@
   <main>
 
     <section class="product">
-      <div class="product__title">
-        <h1>Милые штуки<br> ручной<br> работы для дома</h1>
-      </div>
-
       <div class="product__list">
-        <div class="product__item--wraper"><a class="product__item" href="#">Предметы <br>интерьера</a>
-          <a class="product__item" href="#">Детские <br>игрушки</a></div>
-        <div class="container">
-          <article class="product__popular popular-item">
-            <h2 class="popular-item__title">Вязаные корзинки</h2>
-            <span class="popular-item__marker">Товар недели</span>
-            <p class="popular-item__description">Экологически чистая пряжа, ручная работа.Доступны в шести расцветках, и трех размерах.</p>
-
-            <table class="popular-item__specification">
-              <tr>
-                <td>Цвет:</td>
-                <td>"Тиффани"/серый</td>
-              </tr>
-              <tr>
-                <td>Диаметр:</td>
-                <td>25 см</td>
-              </tr>
-              <tr>
-                <td>Высота:</td>
-                <td>15 см</td>
-              </tr>
-            </table>
-
-            <img class="popular-item__pic" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-            <span class="popular-item__price">Цена: 990 руб.</span>
-            <a class="popular-item__button page-button">Заказать</a>
-          </article>
+        <div class="product__title">
+          <h1>Милые штуки ручной <br> работы для дома</h1>
+        </div>
+        <div class="product__item--wraper">
+          <a class="product__item" href="#">Предметы <br>интерьера</a>
+          <a class="product__item" href="#">Детские <br>игрушки</a>
         </div>
       </div>
+
+      <div class="container">
+        <article class="product__popular popular-item">
+          <h2 class="popular-item__title">Вязаные корзинки</h2>
+          <span class="popular-item__marker">Товар недели</span>
+          <p class="popular-item__description">Экологически чистая пряжа, ручная работа.
+            Доступны в шести расцветках, и трех размерах.</p>
+
+          <table class="popular-item__specification">
+            <tr>
+              <td>Цвет:</td>
+              <td>"Тиффани"/серый</td>
+            </tr>
+            <tr>
+              <td>Диаметр:</td>
+              <td>25 см</td>
+            </tr>
+            <tr>
+              <td>Высота:</td>
+              <td>15 см</td>
+            </tr>
+          </table>
+
+          <img class="popular-item__pic" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <span class="popular-item__price">Цена: 990 руб.</span>
+          <a class="popular-item__button page-button">Заказать</a>
+        </article>
+      </div>
+
     </section>
 
     <section class="advantages">
-      <h2 class="advantages__title">Коротко о нас:</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">Экологически <br> чистые материалы</li>
-        <li class="advantages__item">Скандинавский стиль<br> по российской цене</li>
-        <li class="advantages__item">Увеличивает лайки <br> на фотографиях</li>
-        <li class="advantages__item">Связано вручную с <br> любовью и умилением</li>
-        <li class="advantages__item">Поддержка отечественного производителя</li>
-        <li class="advantages__item">Поставляется <br>в подарочной упаковке</li>
-      </ul>
+      <div class="container">
+        <h2 class="advantages__title">Коротко о нас:</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">Экологически <br> чистые материалы</li>
+          <li class="advantages__item">Скандинавский стиль<br> по российской цене</li>
+          <li class="advantages__item">Увеличивает лайки <br> на фотографиях</li>
+          <li class="advantages__item">Связано вручную с <br> любовью и умилением</li>
+          <li class="advantages__item">Поддержка отечественного производителя</li>
+          <li class="advantages__item">Поставляется <br>в подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <article class="comment">
       <h2 class="comment__title">Отзывы</h2>
@@ -118,15 +127,29 @@
 
     <footer class="footer">
       <div class="container">
-        <a><img class="footer__pic" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
+        <a><img class="footer__pic hidden" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
         <section class="footer__social">
           <ul class="footer__social-list soc-list">
-            <li class="soc-list__item soc-list__item--insta"><a href="#">Insta</a></li>
-            <li class="soc-list__item soc-list__item--fb"><a href="#">FB</a></li>
-            <li class="soc-list__item soc-list__item--tw"><a href="#">Tw</a></li>
+            <li class="soc-list__item">
+              <a class="soc-list__item--insta" href="#" arial-label="Instagram">
+                <img src="img/icon-insta.svg">
+              </a>
+            </li>
+            <li class="soc-list__item">
+              <a class="soc-list__item--fb" href="#">
+                <img src="img/icon-fb.svg">
+              </a>
+            </li>
+            <li class="soc-list__item">
+              <a class="soc-list__item--tw" href="#">
+                <img src="img/icon-twitter.svg">
+              </a>
+            </li>
           </ul>
           <div class="footer__wrap">
-            <a href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__develop">Разработанно</span>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="footer__develop">Разработанно</span></a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
               <img class="footer__develop footer__develop--pic" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLacademy"></a>
           </div>
         </section>
@@ -158,4 +181,5 @@
     </section>
   </main>
 </body>
+
 </html>

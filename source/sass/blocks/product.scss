@@ -1,0 +1,60 @@
+.product__popular {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__list {
+  background-color: #f9f9f9;
+}
+
+.product__title {
+  position: relative;
+  font-size: 18px;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  background: url("../../img/hero-mobile@1x.jpg") #f9f9f9 no-repeat center;
+  width: 100%;
+  height: 282px;
+  background-position: 50% 20%;
+
+  h1 {
+    margin: 0 20px;
+    margin-top: 70px;
+    text-align: center;
+  }
+}
+
+.product__item--wraper {
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  :nth-child(2) {
+    background-color: $dark-tiffany;
+  }
+}
+
+.product__item {
+  @include a-zero();
+  font-size: 19px;
+  line-height: 29px;
+  color: $white;
+  background-color: $tiffany;
+  height: 103px;
+  padding-top: 28px;
+  padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .product__title {
+    font-size: 30px;
+    line-height: 50px;
+    background: url("../../img/hero-tablet@1x.jpg") no-repeat center;
+    height: 625px;
+    background-position: 50% 1%;
+  }
+}

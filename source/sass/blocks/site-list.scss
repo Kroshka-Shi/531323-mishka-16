@@ -1,0 +1,42 @@
+.site-list {
+  @include indents-zero();
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__item {
+  border-bottom: 1px #ececec solid;
+  padding-left: 80px;
+
+  a {
+    @include a-zero();
+    display: block;
+    margin: 30px 0;
+  }
+}
+
+.site-list__item--marker {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    flex-direction: row;
+    order: 2;
+  }
+
+  .site-list__item {
+    font-size: 14px;
+    border: none;
+    position: absolute;
+    top: 65px;
+    left: -50px;
+    z-index: 1;
+  }
+
+  :nth-child(2) {
+    left: 100px;
+  }
+}
