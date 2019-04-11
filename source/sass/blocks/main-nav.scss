@@ -18,13 +18,12 @@
   .main-nav {
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 30px;
   }
 
   .main-nav__deliver {
     position: absolute;
     top: 85px;
-    right: 30px;
+    right: 50px;
     z-index: 1;
   }
 }

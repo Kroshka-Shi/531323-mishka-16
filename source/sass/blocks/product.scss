@@ -2,6 +2,8 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
+  position: relative;
 }
 
 .product__list {
@@ -44,8 +46,8 @@
   line-height: 29px;
   color: $white;
   background-color: $tiffany;
-  height: 103px;
-  padding-top: 28px;
+  height: 115px;
+  padding: 28px 0;
   padding-left: 30px;
 }
 
@@ -56,5 +58,25 @@
     background: url("../img/hero-tablet@1x.jpg") no-repeat center;
     height: 625px;
     background-position: 50% 1%;
+
+    h1 {
+      margin-top: 150px;
+    }
+  }
+
+  .product__item--wraper {
+    min-width: 668px;
+    padding: 0 50px;
+    flex-direction: row;
+  }
+
+  .product__item {
+    width: 50%;
+  }
+
+  .product__popular {
+    padding: 0 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
