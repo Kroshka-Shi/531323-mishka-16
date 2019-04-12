@@ -21,8 +21,8 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="#">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="site-list__item site-list__item--marker"><a href="#">Новые поступления</a></li>
-          <li class="site-list__item site-list__item--marker"><a href="#">Распродажа</a></li>
+          <li class="site-list__item hidden"><a href="#">Новые поступления</a></li>
+          <li class="site-list__item hidden"><a href="#">Распродажа</a></li>
         </ul>
 
         <ul class="main-nav__list cart-list">
@@ -76,7 +76,7 @@
       </div>
     </section>
 
-    <section class="process">
+    <section class="process hidden">
       <h2 class="process__title">Процесс производства</h2>
       <video class="process__video" width="260" height="150" poster="http://placehold.it/150x100">
       </video>
@@ -84,63 +84,63 @@
         как появляются наши товары</p>
       <a class="process__btn" href="#">Сделать заказ</a>
     </section>
+  </main>
 
-    <footer class="footer">
-      <div class="container">
-        <a><img class="footer__pic hidden" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
-        <section class="footer__social">
-          <ul class="footer__social-list soc-list">
-            <li class="soc-list__item">
-              <a class="soc-list__item--insta" href="#" arial-label="Instagram">
-              <img src="img/icon-insta.svg">
+  <footer class="footer">
+    <div class="container">
+      <a><img class="footer__pic hidden" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
+      <section class="footer__social">
+        <ul class="footer__social-list soc-list">
+          <li class="soc-list__item">
+            <a class="soc-list__item--insta" href="#" arial-label="Instagram">
+            <img src="img/icon-insta.svg">
+          </a>
+        </li>
+          <li class="soc-list__item">
+            <a class="soc-list__item--fb" href="#">
+            <img src="img/icon-fb.svg">
+          </a>
+          </li>
+          <li class="soc-list__item">
+            <a class= "soc-list__item--tw" href="#">
+              <img src="img/icon-twitter.svg">
             </a>
-          </li>
-            <li class="soc-list__item">
-              <a class="soc-list__item--fb" href="#">
-              <img src="img/icon-fb.svg">
-            </a>
-            </li>
-            <li class="soc-list__item">
-              <a class= "soc-list__item--tw" href="#">
-                <img src="img/icon-twitter.svg">
-              </a>
-            </li>
-          </ul>
-          <div class="footer__wrap">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="footer__develop">Разработанно</span></a>
-              <a href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="footer__develop footer__develop--pic"
-              src="img/htmlacademy.svg" width="27" height="34"
-              alt="HTMLacademy"></a>
-          </div>
-        </section>
-      </div>
-    </footer>
-
-    <section class="modal">
-      <h3 class="modal__title">Добавить в корзину</h3>
-      <p>Выберите размер:</p>
-      <form name="size" method="get" action="https://echo.htmlacademy.ru">
-        <ul class="modal__choose size">
-          <li class="size__item">
-            <input type="radio" name="size__item" value="S" id="size__S">
-            <label for="size__S">S</label>
-          </li>
-
-          <li class="size__item">
-            <input type="radio" name="size__item" value="M" id="size__M">
-            <label for="size__M">M</label>
-          </li>
-
-          <li class="size__item">
-            <input type="radio" name="size__item" value="L" id="size__L">
-            <label for="size__L">L</label>
           </li>
         </ul>
-        <button class="modal_btn" type="submit">Добавить</button>
-      </form>
-    </section>
-  </main>
+        <div class="footer__wrap">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="footer__develop">Разработанно</span></a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="footer__develop footer__develop--pic"
+            src="img/htmlacademy.svg" width="27" height="34"
+            alt="HTMLacademy"></a>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <section class="modal hidden">
+    <h3 class="modal__title">Добавить в корзину</h3>
+    <p>Выберите размер:</p>
+    <form name="size" method="get" action="https://echo.htmlacademy.ru">
+      <ul class="modal__choose size">
+        <li class="size__item">
+          <input type="radio" name="size__item" value="S" id="size__S">
+          <label for="size__S">S</label>
+        </li>
+
+        <li class="size__item">
+          <input type="radio" name="size__item" value="M" id="size__M">
+          <label for="size__M">M</label>
+        </li>
+
+        <li class="size__item">
+          <input type="radio" name="size__item" value="L" id="size__L">
+          <label for="size__L">L</label>
+        </li>
+      </ul>
+      <button class="modal_btn" type="submit">Добавить</button>
+    </form>
+  </section>
 </body>
 </html>

@@ -21,8 +21,8 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
-          <li class="site-list__item site-list__item--marker"><a href="#">Новые поступления</a></li>
-          <li class="site-list__item site-list__item--marker"><a href="#">Распродажа</a></li>
+          <li class="site-list__item hidden"><a href="#">Новые поступления</a></li>
+          <li class="site-list__item hidden"><a href="#">Распродажа</a></li>
         </ul>
 
         <ul class="main-nav__list cart-list">
@@ -33,7 +33,7 @@
       </nav>
   </header>
 
-  <main>
+  <main class="hidden">
     <h1>Вязание на заказ</h1>
     <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
@@ -122,39 +122,39 @@
       <span>*Поля обязательные для заполнения</span>
       <button class="order__btn" type="submit">Отправить заказ</button>
     </form>
+  </main>
 
-    <footer class="footer">
-      <div class="container">
-        <a><img class="footer__pic hidden" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
-        <section class="footer__social">
-          <ul class="footer__social-list soc-list">
-            <li class="soc-list__item">
-              <a class="soc-list__item--insta" href="#" arial-label="Instagram">
-              <img src="img/icon-insta.svg">
+  <footer class="footer">
+    <div class="container">
+      <a><img class="footer__pic hidden" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
+      <section class="footer__social">
+        <ul class="footer__social-list soc-list">
+          <li class="soc-list__item">
+            <a class="soc-list__item--insta" href="#" arial-label="Instagram">
+            <img src="img/icon-insta.svg">
+          </a>
+        </li>
+          <li class="soc-list__item">
+            <a class="soc-list__item--fb" href="#">
+            <img src="img/icon-fb.svg">
+          </a>
+          </li>
+          <li class="soc-list__item">
+            <a class= "soc-list__item--tw" href="#">
+              <img src="img/icon-twitter.svg">
             </a>
           </li>
-            <li class="soc-list__item">
-              <a class="soc-list__item--fb" href="#">
-              <img src="img/icon-fb.svg">
-            </a>
-            </li>
-            <li class="soc-list__item">
-              <a class= "soc-list__item--tw" href="#">
-                <img src="img/icon-twitter.svg">
-              </a>
-            </li>
-          </ul>
-          <div class="footer__wrap">
+        </ul>
+        <div class="footer__wrap">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="footer__develop">Разработанно</span></a>
             <a href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="footer__develop">Разработанно</span></a>
-              <a href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="footer__develop footer__develop--pic"
-              src="img/htmlacademy.svg" width="27" height="34"
-              alt="HTMLacademy"></a>
-          </div>
-        </section>
-      </div>
-    </footer>
-  </main>
+            <img class="footer__develop footer__develop--pic"
+            src="img/htmlacademy.svg" width="27" height="34"
+            alt="HTMLacademy"></a>
+        </div>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
