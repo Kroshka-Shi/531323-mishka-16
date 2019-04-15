@@ -88,3 +88,21 @@
     left: 50px;
   }
 }
+
+@media (min-width: 1200px) {
+  .popular-item__top {
+    justify-content: flex-start;
+  }
+
+  .popular-item__title {
+    order: 2;
+  }
+
+  .popular-item__middle {
+    margin-left: 150px;
+  }
+
+  .popular-item__bottom {
+    margin-left: 150px;
+  }
+}

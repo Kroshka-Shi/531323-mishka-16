@@ -11,29 +11,28 @@
 
 <body>
   <header class="header">
-    <div class="header__top">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
-      <button class="header__toggle" type="button"></button>
-    </div>
+    <nav class="main-nav">
+      <div class="main-nav__top top">
+        <a href="index.html" class="top__logo">
+          <img class="top__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
+        <button class="top__toggle" type="button"></button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
+        <li class="site-list__item hidden"><a href="#">Новые поступления</a></li>
+        <li class="site-list__item hidden"><a href="#">Распродажа</a></li>
+      </ul>
 
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
-          <li class="site-list__item hidden"><a href="#">Новые поступления</a></li>
-          <li class="site-list__item hidden"><a href="#">Распродажа</a></li>
-        </ul>
-
-        <ul class="main-nav__list cart-list">
-          <li class="cart-list__item"><a href="#">Корзина: пока пуста</a></li>
-          <li class="cart-list__item"><a href="#">Поиск по сайту</a></li>
-        </ul>
-        <p class="main-nav__deliver hidden">Бесплатная доставка по России</p>
-      </nav>
+      <ul class="main-nav__list cart-list">
+        <li class="cart-list__item"><a href="#">Корзина: пока пуста</a></li>
+        <li class="cart-list__item"><a href="#">Поиск по сайту</a></li>
+      </ul>
+      <p class="main-nav__deliver hidden">Бесплатная доставка по России</p>
+    </nav>
   </header>
 
-  <main class="hidden">
+  <main>
     <h1>Вязание на заказ</h1>
     <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
@@ -125,36 +124,33 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <a><img class="footer__pic hidden" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
-      <section class="footer__social">
-        <ul class="footer__social-list soc-list">
-          <li class="soc-list__item">
-            <a class="soc-list__item--insta" href="#" arial-label="Instagram">
+    <a><img class="footer__pic hidden" src="img/logo-footer.svg" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
+    <section class="footer__social">
+      <ul class="footer__social-list soc-list">
+        <li class="soc-list__item">
+          <a class="soc-list__item--insta" href="#" arial-label="Instagram">
             <img src="img/icon-insta.svg">
           </a>
         </li>
-          <li class="soc-list__item">
-            <a class="soc-list__item--fb" href="#">
+        <li class="soc-list__item">
+          <a class="soc-list__item--fb" href="#">
             <img src="img/icon-fb.svg">
           </a>
-          </li>
-          <li class="soc-list__item">
-            <a class= "soc-list__item--tw" href="#">
-              <img src="img/icon-twitter.svg">
-            </a>
-          </li>
-        </ul>
-        <div class="footer__wrap">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="footer__develop">Разработанно</span></a>
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="footer__develop footer__develop--pic"
-            src="img/htmlacademy.svg" width="27" height="34"
-            alt="HTMLacademy"></a>
-        </div>
-      </section>
-    </div>
+        </li>
+        <li class="soc-list__item">
+          <a class="soc-list__item--tw" href="#">
+            <img src="img/icon-twitter.svg">
+          </a>
+        </li>
+      </ul>
+    </section>
+      <div class="footer__wrap">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__develop">Разработанно</span></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="footer__develop footer__develop--pic" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLacademy"></a>
+      </div>
+
   </footer>
 </body>
 </html>

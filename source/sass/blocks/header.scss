@@ -3,44 +3,11 @@
   flex-direction: column;
 }
 
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  border-bottom: 1px #ececec solid;
-}
-
-.header__logo {
-  padding-left: 75px;
-}
-
-.header__toggle {
-  width: 25px;
-  height: 25px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: auto;
-  border: none;
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 2px #ececec solid;
     padding: 0 50px;
-  }
-
-  .header__top {
-    border: none;
-  }
-
-  .header__toggle {
-    display: none;
   }
 }

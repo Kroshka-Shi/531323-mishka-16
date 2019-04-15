@@ -1,0 +1,23 @@
+.top__logo {
+  padding-left: 75px;
+}
+
+.top__toggle {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .top__toggle {
+    display: none;
+  }
+}

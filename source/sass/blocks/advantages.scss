@@ -12,7 +12,6 @@
 }
 
 .advantages__title {
-  margin-left: 30px;
   margin-top: 85px;
 }
 
@@ -22,8 +21,13 @@
 }
 
 @media (min-width: 768px) {
-  .advantages__list {
+  .advantages {
     max-width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .advantages__list {
     height: 450px; /* позже расчитать*/
     flex-wrap: wrap;
 

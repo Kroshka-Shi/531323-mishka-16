@@ -4,6 +4,13 @@
   flex-direction: column;
 }
 
+.main-nav__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px #ececec solid;
+}
+
 .main-nav__deliver {
   font-family: $f-normal;
   font-size: 14px;
@@ -15,6 +22,10 @@
     display: block;
   }
 
+  .main-nav__top {
+    border: none;
+  }
+
   .main-nav {
     flex-direction: row;
     justify-content: flex-end;
@@ -22,8 +33,14 @@
 
   .main-nav__deliver {
     position: absolute;
-    top: 85px;
+    top: 95px;
     right: 50px;
     z-index: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__top {
+    order: 2;
   }
 }
