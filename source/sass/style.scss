@@ -1,7 +1,6 @@
 @import "variables";
 @import "mixin";
 @import "global";
-@import "blocks/header";
 @import "blocks/main-nav";
 @import "blocks/product";
 @import "blocks/advantages";
@@ -9,3 +8,9 @@
 @import "blocks/catalog";
 @import "blocks/cart-product";
 @import "blocks/button";
+@import "blocks/cart-list";
+@import "blocks/popular-item";
+@import "blocks/site-list";
+@import "blocks/soc-list";
+@import "blocks/header";
+@import "blocks/top";

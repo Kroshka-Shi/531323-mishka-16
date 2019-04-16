@@ -7,6 +7,8 @@
   a {
     @include a-zero();
   }
+  display: flex;
+  flex-direction: column;
 }
 
 .cart-product__wrap {
@@ -37,4 +39,11 @@
   font-size: 14px;
   margin-left: 30px;
   padding: 20px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .cart-product {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

@@ -3,33 +3,36 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a href="index.html" class="header__logo"> <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
-    <button class="header__toggle" type="button"></button>
-
     <nav class="main-nav">
-
-      <ul class="main-nav__list site-list">
+      <div class="main-nav__top top">
+        <a href="index.html" class="top__logo">
+          <img class="top__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
+        <button class="top__toggle" type="button"></button>
+      </div>
+      <ul class="main-nav__list site-list site-list__top">
         <li class="site-list__item"><a href="#">Каталог товаров</a></li>
         <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+</ul>
+        <ul class="main-nav__list site-list__bottom">
         <li class="site-list__item"><a href="#">Новые поступления</a></li>
         <li class="site-list__item"><a href="#">Распродажа</a></li>
       </ul>
 
       <ul class="main-nav__list cart-list">
-        <li class="cart-list__item"><a href="#">Корзина</a></li>
-        <li class="cart-list__item"><a href="#">Поиск</a></li>
+        <li class="cart-list__item"><a href="#">Корзина: пока пуста</a></li>
+        <li class="cart-list__item"><a href="#">Поиск по сайту</a></li>
       </ul>
-      <p class="main-nav__deliver">Бесплатная доставка по России</p>
-    </nav>
-
-  </header>
+      <p class="main-nav__deliver hidden">Бесплатная доставка по России</p>
+      </nav>
+      </header>
 
   <main>
     <section class="catalog">
@@ -37,16 +40,17 @@
         <h1>Каталог товаров</h1>
       </div>
 
-      <div class="container catalog__wrap">
         <ul class="catalog__list">
           <li class="catalog__item cart-product">
             <a href="#"><img class="cart-product__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
-            <div class="cart-product__wrap"><a href="#" class="cart-product__title">
+            <div class="cart-product__wrap">
+              <a href="#" class="cart-product__title">
                 <h2>Зайчик-попрыгайчик</h2>
               </a>
               <p class="cart-product_desc">Рост 30 см, вес 200г</p>
+
+              <span class="cart-product__price">1 200 руб.</span>
             </div>
-            <span class="cart-product__price">1 200 руб.</span>
           </li>
 
           <li class="catalog__item cart-product">
@@ -56,8 +60,9 @@
                 <h2>Корзинка для белья</h2>
               </a>
               <p class="cart-product_desc">Диаметр 15 см, высота 10 см</p>
+
+              <span class="cart-product__price">690 руб.</span>
             </div>
-            <span class="cart-product__price">690 руб.</span>
           </li>
 
           <li class="catalog__item cart-product">
@@ -67,14 +72,14 @@
                 <h2>Большая корзинка для игрушек</h2>
               </a>
               <p class="cart-product_desc">Диаметр 30 см, высота 30 см</p>
+
+              <span class="cart-product__price">1 500 руб.</span>
             </div>
-            <span class="cart-product__price">1 500 руб.</span>
           </li>
         </ul>
-      </div>
     </section>
 
-    <section class="process">
+    <section class="process hidden">
       <h2 class="process__title">Процесс производства</h2>
       <video class="process__video" width="260" height="150" poster="http://placehold.it/150x100">
       </video>
@@ -82,47 +87,62 @@
         как появляются наши товары</p>
       <a class="process__btn" href="#">Сделать заказ</a>
     </section>
-
-    <footer class="footer">
-      <div class="container">
-        <a><img class="footer__pic" src="http://placehold.it/150x100" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
-        <section class="footer__social">
-          <ul class="footer__social-list soc-list">
-            <li class="soc-list__item soc-list__item--insta"><a href="#">Insta</a></li>
-            <li class="soc-list__item soc-list__item--fb"><a href="#">FB</a></li>
-            <li class="soc-list__item soc-list__item--tw"><a href="#">Tw</a></li>
-          </ul>
-          <div class="footer__wrap">
-            <a href="https://htmlacademy.ru/intensive/adaptive"><span class="footer__develop">Разработанно</span>
-              <img class="footer__develop footer__develop--pic" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLacademy"></a>
-          </div>
-        </section>
-      </div>
-    </footer>
-
-    <section class="modal">
-      <h3 class="modal__title">Добавить в корзину</h3>
-      <p>Выберите размер:</p>
-      <form name="size" method="get" action="https://echo.htmlacademy.ru">
-        <ul class="modal__choose size">
-          <li class="size__item">
-            <input type="radio" name="size__item" value="S" id="size__S">
-            <label for="size__S">S</label>
-          </li>
-
-          <li class="size__item">
-            <input type="radio" name="size__item" value="M" id="size__M">
-            <label for="size__M">M</label>
-          </li>
-
-          <li class="size__item">
-            <input type="radio" name="size__item" value="L" id="size__L">
-            <label for="size__L">L</label>
-          </li>
-        </ul>
-        <button class="modal_btn" type="submit">Добавить</button>
-      </form>
-    </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+    <a><img class="footer__pic hidden" src="img/logo-footer.svg" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
+    <section class="footer__social">
+      <ul class="footer__social-list soc-list">
+        <li class="soc-list__item">
+          <a class="soc-list__item--insta" href="#" arial-label="Instagram">
+            <img src="img/icon-insta.svg">
+          </a>
+        </li>
+        <li class="soc-list__item">
+          <a class="soc-list__item--fb" href="#">
+            <img src="img/icon-fb.svg">
+          </a>
+        </li>
+        <li class="soc-list__item">
+          <a class="soc-list__item--tw" href="#">
+            <img src="img/icon-twitter.svg">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="footer__wrap">
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer__develop">Разработанно</span></a>
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer__develop footer__develop--pic" src="img/htmlacademy.svg" width="42" height="42" alt="HTMLacademy"></a>
+    </div>
+  </div>
+  </footer>
+
+  <section class="modal hidden">
+    <h3 class="modal__title">Добавить в корзину</h3>
+    <p>Выберите размер:</p>
+    <form name="size" method="get" action="https://echo.htmlacademy.ru">
+      <ul class="modal__choose size">
+        <li class="size__item">
+          <input type="radio" name="size__item" value="S" id="size__S">
+          <label for="size__S">S</label>
+        </li>
+
+        <li class="size__item">
+          <input type="radio" name="size__item" value="M" id="size__M">
+          <label for="size__M">M</label>
+        </li>
+
+        <li class="size__item">
+          <input type="radio" name="size__item" value="L" id="size__L">
+          <label for="size__L">L</label>
+        </li>
+      </ul>
+      <button class="modal_btn" type="submit">Добавить</button>
+    </form>
+  </section>
 </body>
+
 </html>
