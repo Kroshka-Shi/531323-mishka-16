@@ -16,17 +16,17 @@
         <a class="top__logo">
 
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <source srcset="img/logo-mobile.svg">
             <img class="top__logo-image" src="img/logo-mobile.svg"
-            width="86" height="35" alt="Мишка. Вязание на заказ">
+          alt="Мишка. Вязание на заказ">
           </picture>
         </a>
 
         <button class="top__toggle" type="button"></button>
       </div>
-
+<div>
       <ul class="main-nav__list site-list__top">
         <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
@@ -39,9 +39,13 @@
 
       <ul class="main-nav__list cart-list">
         <li class="cart-list__item"><a href="#">Корзина: пока пуста</a></li>
-        <li class="cart-list__item"><a href="#">Поиск по сайту</a></li>
+        <li class="cart-list__item"><a href="#">
+          <img class="cart-list__item--search" src="img/icon-search.svg">
+          <span>Поиск по сайту</span></a></li>
       </ul>
       <p class="main-nav__deliver hidden">Бесплатная доставка по России</p>
+
+  </div>
     </nav>
   </header>
 
@@ -202,6 +206,7 @@
       <button class="modal_btn" type="submit">Добавить</button>
     </form>
   </section>
+
 </body>
 
 </html>

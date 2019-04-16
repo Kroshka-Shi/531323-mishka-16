@@ -14,7 +14,14 @@
     <nav class="main-nav">
       <div class="main-nav__top top">
         <a href="index.html" class="top__logo">
-          <img class="top__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <source srcset="img/logo-mobile.svg">
+            <img class="top__logo-image" src="img/logo-mobile.svg"
+            width="86" height="35" alt="Мишка. Вязание на заказ">
+          </picture>
+         </a>
         <button class="top__toggle" type="button"></button>
       </div>
       <ul class="main-nav__list site-list__top">

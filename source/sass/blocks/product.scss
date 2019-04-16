@@ -22,6 +22,7 @@
 
 .product__list {
   background-color: #f9f9f9;
+  position: relative;
 }
 
 .product__title {
@@ -79,16 +80,16 @@
   }
 
   .product__item--wraper {
-    min-width: 668px;
+    min-width: 768px;
     padding: 0 50px;
     flex-direction: row;
     position: relative;
   }
 
-  .product__item--wraper::after {
+  .product__list::after {
     content: "";
     position: absolute;
-    bottom: -11px;
+    bottom: -12px;
     left: 0;
     width: 100%;
     display: block;
@@ -112,7 +113,8 @@
 }
 
 @media (min-width: 1150px) {
-  .product {
+  .product__popular,
+  .product__item--wraper {
     max-width: 1150px;
     margin: 0 auto;
   }
@@ -120,5 +122,10 @@
   .product__title {
     background: url("../img/hero-desktop@1x.jpg") no-repeat center;
     height: 630px;
+    width: 100%;
+  }
+
+  .product__item--wraper::after {
+    width: 100%;
   }
 }

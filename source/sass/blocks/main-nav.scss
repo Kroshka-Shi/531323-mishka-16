@@ -26,15 +26,11 @@
 }
 
 @media (min-width: 768px) {
-  .main-nav > p {
-    display: block;
-  }
-
   .main-nav__top {
     order: -1;
     border: none;
     padding: 20px 0 15px 0;
-    margin-right: 120px;
+    margin-right: 90px;
   }
 
   .main-nav {
@@ -44,15 +40,16 @@
   }
 
   .main-nav__deliver {
+    display: block;
     position: absolute;
     top: 80px;
+    right: 0;
     z-index: 1;
   }
 }
 
 @media (min-width: 1150px) {
   .main-nav__top {
-    order: 2;
     margin-right: 0;
   }
 }
