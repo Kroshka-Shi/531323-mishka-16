@@ -1,5 +1,4 @@
 .catalog {
-
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +26,7 @@
   border-top: none;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1149px) {
   .catalog__list {
     width: 768px;
     padding: 0 50px;
@@ -39,11 +38,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .catalog__list {
-    width: 1200px;
+    width: 1150px;
     padding: 0 50px;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

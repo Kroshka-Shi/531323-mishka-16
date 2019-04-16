@@ -21,6 +21,9 @@
 @media (min-width: 768px) {
   .cart-list {
     flex-direction: row;
+    font-size: 16px;
+    line-height: 24px;
+    order: 2;
 
     :nth-child(1) {
       order: 2;
@@ -29,10 +32,11 @@
 
   .cart-list__item {
     border: none;
+    border-left: 1px #ececec solid;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
   .cart-list {
     order: 3;
   }

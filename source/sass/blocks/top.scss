@@ -17,6 +17,10 @@
 }
 
 @media (min-width: 768px) {
+  .top__logo {
+    padding: 0;
+  }
+
   .top__toggle {
     display: none;
   }

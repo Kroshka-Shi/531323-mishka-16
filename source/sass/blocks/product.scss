@@ -1,3 +1,17 @@
+.product {
+  position: relative;
+}
+
+.product::after {
+  content: "";
+  width: 100%;
+  background: url("../img/bg-zigzag-line.svg") repeat-x;
+  background-size: 320px 100%;
+  display: block;
+  height: 7px;
+}
+
+
 .product__popular {
   margin-top: 35px;
   display: flex;
@@ -68,7 +82,23 @@
     min-width: 668px;
     padding: 0 50px;
     flex-direction: row;
+    position: relative;
   }
+
+  .product__item--wraper::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    display: block;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color: $white;
+    height: 34px;
+  }
+
 
   .product__item {
     width: 50%;
@@ -81,7 +111,12 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
+  .product {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
   .product__title {
     background: url("../img/hero-desktop@1x.jpg") no-repeat center;
     height: 630px;

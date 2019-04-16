@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,11 +17,14 @@
           <img class="top__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка. Вязание на заказ"></a>
         <button class="top__toggle" type="button"></button>
       </div>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list__top">
         <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
-        <li class="site-list__item hidden"><a href="#">Новые поступления</a></li>
-        <li class="site-list__item hidden"><a href="#">Распродажа</a></li>
+</ul>
+
+        <ul class="main-nav__list site-list__bottom">
+        <li class="site-list__item"><a href="#">Новые поступления</a></li>
+        <li class="site-list__item"><a href="#">Распродажа</a></li>
       </ul>
 
       <ul class="main-nav__list cart-list">
@@ -124,6 +127,7 @@
   </main>
 
   <footer class="footer">
+    <div class="footer__container">
     <a><img class="footer__pic hidden" src="img/logo-footer.svg" width="105" height="32" alt="Мишка. Вязание на заказ"></a>
     <section class="footer__social">
       <ul class="footer__social-list soc-list">
@@ -144,13 +148,13 @@
         </li>
       </ul>
     </section>
-      <div class="footer__wrap">
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="footer__develop">Разработанно</span></a>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="footer__develop footer__develop--pic" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLacademy"></a>
-      </div>
-
+    <div class="footer__wrap">
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer__develop">Разработанно</span></a>
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer__develop footer__develop--pic" src="img/htmlacademy.svg" width="42" height="42" alt="HTMLacademy"></a>
+    </div>
+  </div>
   </footer>
 </body>
 </html>
