@@ -25,3 +25,11 @@
     display: none;
   }
 }
+
+@media (min-width: 1150px) {
+  .top__logo {
+    position: absolute;
+    left: 43%;
+    top: 10%;
+  }
+}

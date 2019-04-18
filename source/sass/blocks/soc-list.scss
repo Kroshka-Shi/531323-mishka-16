@@ -1,8 +1,14 @@
+.soc-list {
+  :last-child {
+    margin-right: 0;
+  }
+}
+
 .soc-list__item {
   a {
     @include a-zero();
   }
   width: 30px;
   padding: 0;
-  margin: 0 20px;
+  margin-right: 40px;
 }

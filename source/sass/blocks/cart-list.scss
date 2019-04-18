@@ -9,13 +9,18 @@
 
 .cart-list__item {
   border-bottom: 1px #ececec solid;
-  padding-left: 80px;
+  padding-left: 30px;
 
   a {
     @include a-zero();
     display: block;
     margin: 25px 0;
   }
+}
+
+.cart-list__item--pic {
+  margin-right: 30px;
+  opacity: 0.2;
 }
 
 @media (min-width: 768px) {
@@ -36,10 +41,15 @@
     border: none;
     border-left: 1px #ececec solid;
   }
+
+  .cart-list__item--search {
+    display: none;
+  }
 }
 
 @media (min-width: 1150px) {
   .cart-list {
     order: 3;
+    margin: 0;
   }
 }
