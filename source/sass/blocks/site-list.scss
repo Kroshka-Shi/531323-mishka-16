@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 0;
     z-index: 1;
 
@@ -31,6 +31,8 @@
     font-size: 14px;
     border: none;
     padding-left: 50px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -39,6 +41,18 @@
     position: relative;
     top: 0;
     left: 0;
+
+    li {
+      font-size: 16px;
+    }
+
+    :first-child {
+      border-right: 1px #000000 solid;
+    }
+  }
+
+  .site-list__item {
+    padding-right: 40px;
   }
 
   .site-list__bottom {

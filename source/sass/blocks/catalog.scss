@@ -30,6 +30,7 @@
   .catalog__list {
     width: 768px;
     padding: 0 50px;
+    margin: 60px 0;
   }
 
   .catalog__item {
@@ -55,5 +56,31 @@
   .catalog__item {
     max-width: 350px;
     margin-right: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog__title {
+    position: relative;
+  }
+
+  .catalog__title h1::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    display: block;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color: $white;
+    height: 34px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog__list {
+    margin: 90px 0;
   }
 }

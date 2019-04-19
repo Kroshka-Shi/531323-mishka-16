@@ -29,7 +29,6 @@
     font-size: 16px;
     line-height: 24px;
     order: 2;
-    margin: auto;
 
     :nth-child(1) {
       order: 2;
@@ -37,9 +36,15 @@
   }
 
   .cart-list__item {
-    margin-top: 10px;
+    display: flex;
     border: none;
     border-left: 1px #ececec solid;
+    height: 90px;
+    align-items: center;
+
+    a {
+      margin: 0;
+    }
   }
 
   .cart-list__item--search {
