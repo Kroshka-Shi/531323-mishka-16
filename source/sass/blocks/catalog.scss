@@ -81,6 +81,7 @@
 
 @media (min-width: 1150px) {
   .catalog__list {
-    margin: 90px 0;
+    max-width: 1150px;
+    margin: 90px auto;
   }
 }
