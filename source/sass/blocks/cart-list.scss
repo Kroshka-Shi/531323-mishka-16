@@ -51,6 +51,10 @@
     order: 2;
   }
 
+  .cart-list__item--search-marker {
+    padding-right: 7px;
+  }
+
   .cart-list__item {
     display: flex;
     border: none;
