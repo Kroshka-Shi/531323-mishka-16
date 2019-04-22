@@ -12,14 +12,16 @@
 }
 
 .advantages__title {
-  margin-top: 35px;
+  margin-top: 20px;
   margin-bottom: 30px;
+  line-height: 24px;
 }
 
 .advantages__item {
   padding: 0;
-  padding-top: 60px;
-  margin-bottom: 30px;
+  padding-top: 55px;
+  line-height: 22px;
+  margin-bottom: 24px;
   position: relative;
 }
 
@@ -34,31 +36,63 @@
     max-width: 768px;
     padding: 0 50px;
     margin: 0 auto;
+    margin-top: 43px;
   }
 
   .advantages__list {
-    height: 450px; /* позже расчитать*/
+    flex-direction: row;
     flex-wrap: wrap;
 
-    :nth-child(n+3) {
+    :nth-child(n+4) {
       margin-right: 0;
     }
   }
 
   .advantages__title {
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-size: 45px;
+    margin-bottom: 60px;
+    letter-spacing: -2px;
   }
 
   .advantages__item {
     font-size: 20px;
-    margin-right: 50px;
+    margin-right: 0;
+    margin-bottom: 55px;
+    width: 50%;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--ball {
+      order: 2;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--gift {
+      order: 6;
+    }
   }
 }
 
 @media (min-width: 1150px) {
+  .advantages {
+    margin-top: 66px;
+    padding: 0 30px;;
+  }
+
   .advantages__title {
     font-size: 50px;
-    margin-top: 70px;
   }
 }
