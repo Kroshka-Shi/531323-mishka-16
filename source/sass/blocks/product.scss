@@ -44,28 +44,44 @@
   }
 }
 
-.product__item--wraper {
+.product__wraper {
   min-width: 320px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
-  :nth-child(2) {
-    background-color: $dark-tiffany;
-  }
 }
 
 .product__item {
   @include a-zero();
   font-size: 19px;
-  line-height: 29px;
+  line-height: 25px;
   color: $white;
+}
+
+.product__first {
   background-color: $tiffany;
-  height: 115px;
-  padding: 28px 30px;
+  height: 103px;
+}
+
+.product__second {
+  background-color: $dark-tiffany;
+  height: 103px;
+}
+
+.product__item--interior,
+.product__item--toy {
+  margin: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 25px 30px;
+}
+
+.product__item--pic {
+  margin: 0;
+  width: auto;
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
@@ -81,7 +97,7 @@
     }
   }
 
-  .product__item--wraper {
+  .product__wraper {
     min-width: 768px;
     padding: 0 50px;
     flex-direction: row;
@@ -104,9 +120,60 @@
 
 
   .product__item {
-    height: auto;
     width: 50%;
+    height: 124px;
+  }
+
+  .product__first {
+    position: relative;
+
+    &:hover {
+      background-color: $tiffany-hover;
+      bottom: 5px;
+    }
+  }
+
+  .product__second {
+    position: relative;
+
+    &:hover {
+      background-color: $dark-tiffany-hover;
+      bottom: 5px;
+    }
+  }
+
+  .product__item--interior,
+  .product__item--toy {
+    min-height: 119px;
+    height: auto;
+    width: 100%;
+    position: relative;
     padding: 28px 30px 35px 30px;
+  }
+
+  .product__first:hover .product__item--interior,
+  .product__second:hover .product__item--toy {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+  }
+
+  .product__first:hover .product__item--pic,
+  .product__second:hover .product__item--pic {
+    opacity: 0.7;
+  }
+
+  .product__first:active .product__item--interior,
+  .product__second:active .product__item--toy {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    opacity: 0.3;
+  }
+
+  .product__first:active .product__item--pic,
+  .product__second:active .product__item--pic {
+    opacity: 0.3;
   }
 
   .product__popular {
@@ -119,7 +186,7 @@
 
 @media (min-width: 1150px) {
   .product__popular,
-  .product__item--wraper {
+  .product__wraper {
     max-width: 1150px;
     margin: 0 auto;
   }
@@ -131,7 +198,7 @@
     width: 100%;
   }
 
-  .product__item--wraper::after {
+  .product__wraper::after {
     width: 100%;
   }
 }
