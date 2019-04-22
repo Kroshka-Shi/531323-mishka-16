@@ -17,11 +17,11 @@
     margin: 25px 0;
 
     &:hover {
-      color: rgba(0, 0, 0, 0.6);
+      color: $black-o60;
     }
 
     &:active {
-      color: rgba(0, 0, 0, 0.3);
+      color: $black-o30;
     }
   }
 }

@@ -7,6 +7,15 @@
   width: 100%;
 }
 
+.footer__pic {
+  &:hover {
+    fill: $dark-tiffany-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .footer__social-list {
   @include indents-zero();
@@ -25,12 +34,28 @@
   align-items: flex-start;
   margin: 0;
   margin-top: 30px;
+
+  &:hover {
+    color: $black-o60;
+  }
+
+  &:active {
+    color: $black-o30;
+  }
 }
 
 .footer__develop--pic {
   margin-left: 25px;
   color: $tiffany;
   fill: $tiffany;
+}
+
+.footer__wrap:hover .footer__develop--pic {
+  fill: $dark-tiffany-hover;
+}
+
+.footer__wrap:active .footer__develop--pic {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {

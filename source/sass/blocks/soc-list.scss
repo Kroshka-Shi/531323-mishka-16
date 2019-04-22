@@ -5,10 +5,19 @@
 }
 
 .soc-list__item {
-  a {
-    @include a-zero();
-  }
   width: 30px;
   padding: 0;
   margin-right: 40px;
+}
+
+.soc-list__item a {
+  @include a-zero();
+
+  &:hover {
+    fill: $dark-tiffany-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
