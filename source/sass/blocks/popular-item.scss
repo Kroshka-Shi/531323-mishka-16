@@ -12,6 +12,7 @@
 
 .popular-item__title {
   margin: 0;
+  font-size: 25px;
 }
 
 .popular-item__marker {
@@ -23,6 +24,7 @@
 
 .popular-item__description {
   font-size: 15px;
+  line-height: 24px;
   color: $gray;
   font-family: $f-normal;
 }
@@ -36,19 +38,20 @@
 }
 
 .popular-item__specification--row {
-  border-bottom: 1px #ececec solid;
+  border-bottom: 1px $border-gray solid;
 
   td {
     padding: 7px 0;
   }
 
   :last-child {
-    padding-left: 20px;
+    padding-left: 18px;
   }
 }
 
 .popular-item__pic {
-  margin: 30px 0 25px 0;
+  display: block;
+  margin: 30px 0 22px 0;
 }
 
 .popular-item__bottom {
@@ -56,7 +59,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .popular-item__price {
@@ -65,55 +68,112 @@
 }
 
 .popular-item__button {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
   .popular-item__top {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
 
   .popular-item__title {
-    font-size: 42px;
+    font-size: 43px;
   }
 
   .popular-item__marker {
+    width: 12%;
     margin: 0;
+    line-height: 17px;
     margin-right: 30px;
     text-align: center;
   }
 
   .popular-item__middle {
-    width: 50%;
+    width: 290px;
+    margin-right: 40px;
   }
 
   .popular-item__pic {
-    width: auto;
-    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 333px;
+    height: 404px;
+    display: block;
   }
 
   .popular-item__bottom {
     position: absolute;
-    bottom: 30px;
+    bottom: 47px;
     left: 50px;
+    margin: 0;
+  }
+
+  .popular-item__description {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular-item__price {
+    font-size: 20px;
+  }
+
+  .popular-item__button {
+    margin-top: 30px;
+    width: 290px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
+  .popular-item {
+    min-height: 700px;
+    position: relative;
+    margin-top: 65px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+
   .popular-item__top {
     justify-content: flex-start;
+    padding-top: 70px;
+  }
+
+  .popular-item__pic {
+    width: 525px;
+    height: 636px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    z-index: -1;
+    margin-top: 0;
   }
 
   .popular-item__title {
     order: 2;
+    font-size: 53px;
+    margin-left: 48px;
   }
 
   .popular-item__middle {
-    margin-left: 150px;
+    margin-left: 177px;
+    justify-content: space-around;
+  }
+
+  .popular-item__marker {
+    padding-left: 43px;
+    margin: 0;
+  }
+
+  .popular-item__description {
+    margin-top: 15px;
+    margin-bottom: 45px;
   }
 
   .popular-item__bottom {
-    margin-left: 150px;
+    margin-left: 180px;
+    margin-bottom: 15px;
   }
 }
