@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   padding: 24px 33px;
+  order: -1;
 }
 
 .process__title {
@@ -55,7 +56,14 @@
   z-index: 1;
 }
 
-@media (min-width: 768px) {
+.process__video-pic {
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1149px) {
   .process {
     width: 668px;
     min-height: 455px;
@@ -68,6 +76,7 @@
   .process__wrap {
     justify-content: flex-start;
     padding: 30px 38px;
+    order: 0;
   }
 
   .process__title {
@@ -80,7 +89,6 @@
   }
 
   .process__video {
-    order: -1;
     height: auto;
   }
 
@@ -100,5 +108,56 @@
   .process__btn {
     width: 582px;
     margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .process {
+    width: 1050px;
+    margin: 60px auto;
+    margin-bottom: 105px;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .process__video-play {
+    left: 290px;
+    top: 190px;
+  }
+
+  .process__wrap {
+    width: auto;
+    padding: 0;
+    position: absolute;
+    top: 35px;
+    right: 47px;
+    flex-direction: column;
+  }
+
+  .process__title {
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .process__title--pic {
+    margin-bottom: 22px;
+  }
+
+  .process__desc-wrap {
+    width: 360px;
+    padding-left: 78px;
+    padding-top: 178px;
+  }
+
+  .process__desc {
+    font-size: 15px;
+    margin: 0;
+    line-height: 30px;
+    margin-bottom: 42px;
+  }
+
+  .process__btn {
+    width: 230px;
+    margin: 0;
   }
 }
