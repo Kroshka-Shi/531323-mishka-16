@@ -1,20 +1,30 @@
 .comment {
-  width: 260px;
-  margin: 0 auto;
-  margin-top: 28px;
+  width: 320px;
+  margin: 28px auto;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
 }
 
+.comment::after {
+  content: "";
+  width: 100%;
+  background: url("../img/bg-zigzag-line.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  display: block;
+  height: 23px;
+}
+
 .comment__title {
   font-size: 24px;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 30px;
+  margin-bottom: 8px;
 }
 
 .comment__item {
-  margin: 0;
   padding: 0;
+  margin: 0 30px;
 }
 
 .comment__text {
@@ -31,18 +41,30 @@
   font-family: $f-normal;
 }
 
+.comment__pagination {
+  margin: 0 30px;
+}
+
+.comment_btn {
+  margin: 0 30px;
+  margin-bottom: 37px;
+}
+
 @media (min-width: 768px) {
   .comment {
     width: 100%;
-    height: 457px;
     background: url("../img/review@1x.jpg") no-repeat;
-    padding: 0 50px;
     position: relative;
+  }
+
+  .comment__item {
+    margin: 0 50px;
+    margin-bottom: 110px;
   }
 
   .comment__title {
     font-size: 42px;
-    margin-top: 90px;
+    margin: 90px 50px;
     margin-bottom: 40px;
   }
 
@@ -62,34 +84,40 @@
 
   .comment__pagination {
     position: absolute;
-    right: 50px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 95px;
   }
 
   .comment_btn {
     width: 175px;
     position: absolute;
     top: 80px;
-    right: 50px;
+    right: 20px;
   }
 }
 
 @media (min-width: 1150px) {
   .comment {
     margin-top: 38px;
-    width: 1050px;
-    padding-left: 175px;
+    width: 1150px;
+    background-position: 50px 0;
   }
 
   .comment__title {
     margin-top: 85px;
     font-size: 52px;
     margin-bottom: 45px;
+    padding-left: 175px;
+  }
+
+  .comment__item {
+    padding-left: 175px;
+    margin-bottom: 160px;
   }
 
   .comment__text {
     margin-bottom: 40px;
-    padding-right: 55px;
+    padding-right: 75px;
   }
 
   .comment__autor {
@@ -97,11 +125,11 @@
   }
 
   .comment__pagination {
-    right: 0;
-    bottom: 60px;
+    right: 20px;
+    bottom: 100px;
   }
 
   .comment_btn {
-    right: 0;
+    right: 20px;
   }
 }

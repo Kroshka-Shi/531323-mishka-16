@@ -154,4 +154,20 @@
   <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
 </symbol>
 
+<symbol id="flag" width="46.68px" height="81.691px"
+  viewBox="-11.34 -28.346 46.68 81.691" enable-background="new -11.34 -28.346 46.68 81.691">
+  <g id="miu">
+    <g id="Artboard-1" transform="translate(-755.000000, -443.000000)">
+      <g id="slice" transform="translate(215.000000, 119.000000)">
+      </g>
+      <g id="editor-flag-triangle-notification-glyph">
+        <path fill="#63D1BB" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <rect x="-11.34" y="-28.346" fill="#231F20" width="3.805" height="81.691"/>
+  </g>
+</symbol>
+
 </svg>
