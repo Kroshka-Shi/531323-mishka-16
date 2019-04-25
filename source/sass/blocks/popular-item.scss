@@ -51,7 +51,7 @@
 
 .popular-item__pic {
   display: block;
-  margin: 30px 0 22px 0;
+  margin: 30px 0 18px 0;
 }
 
 .popular-item__bottom {
@@ -68,7 +68,7 @@
 }
 
 .popular-item__button {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 @media (min-width: 768px) {
@@ -112,9 +112,13 @@
   }
 
   .popular-item__description {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .popular-item__specification--row :last-child {
+    padding-left: 0;
   }
 
   .popular-item__price {

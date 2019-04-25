@@ -1,0 +1,39 @@
+.size {
+  @include indents-zero();
+  display: flex;
+  margin-bottom: 30px;
+
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.size__item {
+  width: 82px;
+  font-size: 17px;
+  color: $gray;
+  margin-right: 7px;
+}
+
+.size__label {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 12px 0;
+  border: 2px $border-gray solid;
+}
+
+.size__input:hover + .size__label {
+  border-color: #c7c7c7;
+}
+
+.size__input:active .size__label,
+.size__input:checked + .size__label {
+  border-color: $tiffany;
+}
+
+@media (min-width: $tablet) {
+  .size__item {
+    width: 112px;
+  }
+}

@@ -1,19 +1,23 @@
 .contact {
-  padding: 25px 0;
+  padding: 27px 0;
+  padding-bottom: 37px;
 }
 
 .contact__title {
+  width: 320px;
   display: block;
-  margin: 0 30px;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 30px;
   font-size: 18px;
 }
 
 .contact__info {
   font-family: $f-normal;
   font-size: 15px;
-  margin: 25px 30px;
-  margin-bottom: 40px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  padding-bottom: 37px;
 
   :last-child {
     margin-bottom: 0;
@@ -31,8 +35,17 @@
     bottom: -3px;
     left: 0;
     width: 154px;
-    height: 2px;
+    height: 1px;
     background-color: $tiffany;
+  }
+
+  &:hover {
+    color: $tiffany;
+  }
+
+  &:active {
+    color: $tiffany;
+    opacity: 0.3;
   }
 }
 
@@ -47,14 +60,14 @@
 }
 
 .contact__map {
-  width: 320px;
+  width: 100%;
   height: 457px;
   background: url("../img/map-mobile@1x.jpg");
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 }
 
 .contact__btn {
-  margin-left: 30px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -67,15 +80,16 @@
   }
 
   .contact__title {
-    width: 100%;
+    width: 768px;
+    margin: 0 auto;
     font-size: 42px;
-    margin: 0 50px;
+    padding: 0 50px;
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      right: 2px;
+      right: 52px;
       top: -25px;
       width: 47px;
       height: 81px;
@@ -84,10 +98,9 @@
   }
 
   .contact__info {
-    width: 100%;
+    width: 768px;
     display: flex;
-    margin: 60px 50px;
-    margin-bottom: 54px;
+    padding: 60px 50px;
     font-size: 17px;
 
     :last-child {
@@ -113,37 +126,60 @@
 
   .contact__map {
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .contact__btn {
     width: 230px;
-    margin-left: 270px;
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1150px) {
   .contact {
+    width: 1150px;
     padding: 0;
-    margin-top: 70px;
+    margin-top: 155px;
     max-height: 451px;
     position: relative;
+    margin-bottom: 30px;
+  }
+
+  .contact__title {
+    font-size: 52px;
+    padding-left: 27px;
+
+    &::after {
+      left: -78px;
+    }
   }
 
   .contact__info {
     flex-direction: column;
     width: auto;
+    padding-left: 200px;
+    padding-top: 65px;
+  }
+
+  .contact__item-spec--line {
+    &::after {
+      bottom: 0;
+    }
   }
 
   .contact__map {
+    position: relative;
+    right: 50px;
+    bottom: 115px;
     width: 525px;
     order: 1;
+    margin-bottom: 0;
   }
 
   .contact__btn {
     margin: 0;
     position: absolute;
-    bottom: 0;
+    bottom: 75px;
+    left: 225px;
   }
 }

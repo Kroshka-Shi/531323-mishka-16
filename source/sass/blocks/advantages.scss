@@ -1,4 +1,5 @@
 .advantages {
+  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
   display: flex;
@@ -33,7 +34,7 @@
 
 @media (min-width: 768px) {
   .advantages {
-    max-width: 768px;
+    width: 768px;
     padding: 0 50px;
     margin: 0 auto;
     margin-top: 43px;
@@ -95,5 +96,6 @@
   .advantages__title {
     font-size: 50px;
     letter-spacing: 1px;
+    margin-bottom: 65px;
   }
 }

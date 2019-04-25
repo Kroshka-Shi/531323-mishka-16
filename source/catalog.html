@@ -58,7 +58,7 @@
 
   <main>
     <section class="catalog">
-      <div class="catalog__title">
+      <div class="title">
         <h1>Каталог товаров</h1>
       </div>
 
@@ -219,27 +219,29 @@
   </footer>
 
   <section class="modal hidden">
-    <h3 class="modal__title">Добавить в корзину</h3>
-    <p>Выберите размер:</p>
-    <form name="size" method="get" action="https://echo.htmlacademy.ru">
-      <ul class="modal__choose size">
-        <li class="size__item">
-          <input type="radio" name="size__item" value="S" id="size__S">
-          <label for="size__S">S</label>
-        </li>
+    <div class="modal__wrap">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p class="modal__desc">Выберите размер:</p>
+      <form class="modal__choose" name="size" method="post" action="https://echo.htmlacademy.ru">
+        <ul class="size">
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="S" id="size__S">
+            <label class="size__label" for="size__S">S</label>
+          </li>
 
-        <li class="size__item">
-          <input type="radio" name="size__item" value="M" id="size__M">
-          <label for="size__M">M</label>
-        </li>
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="M" id="size__M">
+            <label class="size__label" for="size__M">M</label>
+          </li>
 
-        <li class="size__item">
-          <input type="radio" name="size__item" value="L" id="size__L">
-          <label for="size__L">L</label>
-        </li>
-      </ul>
-      <button class="modal_btn" type="submit">Добавить</button>
-    </form>
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="L" id="size__L">
+            <label class="size__label" for="size__L">L</label>
+          </li>
+        </ul>
+        <button class="modal_btn page-button" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
 </body>
 

@@ -1,0 +1,48 @@
+.title {
+  h1 {
+    text-align: center;
+    font-size: 27px;
+  }
+  width: 100%;
+  margin: 0 auto;
+  padding: 51px 0;
+  background-color: $light-gray;
+  position: relative;
+}
+
+
+@media (min-width: 768px) and (max-width: 1149px) {
+  .title {
+    padding: 70px 0;
+
+    h1 {
+      font-size: 43px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .title h1::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    display: block;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color: $white;
+    height: 34px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .title {
+    padding: 65px 0;
+
+    h1 {
+      font-size: 53px;
+    }
+  }
+}
