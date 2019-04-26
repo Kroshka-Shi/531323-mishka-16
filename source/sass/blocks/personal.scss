@@ -1,0 +1,18 @@
+.personal__item {
+  @include placeholder {
+    font-family: $f-normal;
+  }
+
+  width: 100%;
+  border: none;
+  border-bottom: 2px $black solid;
+  padding: 10px 0 14px 0;
+  font-family: $f-normal;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $tiffany;
+    outline: none;
+  }
+}

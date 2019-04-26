@@ -1,3 +1,100 @@
 .order__ul {
   @include indents-zero();
 }
+
+.order__legend {
+  text-transform: uppercase;
+  color: $tiffany;
+  padding-right: 20px;
+}
+
+.order__tel {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 26px;
+}
+
+.order__email {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.order__tel-item {
+  @include placeholder {
+    font-family: $f-normal;
+    font-size: 19px;
+  }
+}
+
+.order__email-item,
+.order__tel-item {
+  width: 100%;
+  border: none;
+  border-bottom: 2px $black solid;
+  padding: 15px 0;
+  font-family: $f-normal;
+  color: $gray;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $tiffany;
+    outline: none;
+  }
+}
+
+.order__tel-pic,
+.order__email-pic {
+  position: absolute;
+  left: 226px;
+  top: 40px;
+  fill: $gray;
+  opacity: 0.6;
+}
+
+.order__email-item:hover + .order__email-pic,
+.order__email-item:active + .order__email-pic,
+.order__email-item:focus + .order__email-pic {
+  opacity: 1;
+  fill: $tiffany;
+}
+
+.order__tel-item:hover + .order__tel-pic,
+.order__tel-item:active + .order__tel-pic,
+.order__tel-item:focus + .order__tel-pic {
+  opacity: 1;
+  fill: $tiffany;
+}
+
+.order__legend-wish {
+  margin-bottom: 18px;
+}
+
+.order__wishes {
+  font-family: $f-normal;
+  width: 100%;
+  height: 142px;
+  border: 2px $black solid;
+  padding: 15px;
+  color: $gray;
+}
+
+.order__filling {
+  display: block;
+  margin: 0;
+  font-family: $f-normal;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  margin-bottom: 22px;
+}
+
+.order__btn {
+  height: 52px;
+}
+
+@media (min-width: 768px) {
+  .order__type {
+    width: 503px;
+    margin: 0;
+  }
+}
