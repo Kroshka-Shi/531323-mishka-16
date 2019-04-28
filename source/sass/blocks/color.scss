@@ -45,3 +45,31 @@
 .color__item:active + .color__label::before {
   border-color: $border-gray;
 }
+
+@media (min-width: 768px) {
+  .color {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+
+    li:nth-child(2n) {
+      margin-left: 65px;
+    }
+  }
+
+  .color__label {
+    &::before {
+      width: 54px;
+      height: 52px;
+      margin: -10px 23px 0 0;
+    }
+  }
+
+  .color__item:checked + .color__label::after {
+    top: 13px;
+    left: 10px;
+    width: 34px;
+    height: 22px;
+    background-size: 34px 22px;
+  }
+}

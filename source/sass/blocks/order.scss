@@ -1,3 +1,9 @@
+.order__fieldset {
+  margin: 0;
+  margin-bottom: 1px;
+  padding: 0;
+}
+
 .order__ul {
   @include indents-zero();
 }
@@ -6,11 +12,22 @@
   text-transform: uppercase;
   color: $tiffany;
   padding-right: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 198px;
+    height: 1px;
+    background-color: $tiffany;
+    position: absolute;
+    left: 62px;
+    top: 15px;
+  }
 }
 
 .order__tel {
   position: relative;
-  margin-top: 8px;
+  margin-top: 27px;
   margin-bottom: 26px;
 }
 
@@ -93,8 +110,32 @@
 }
 
 @media (min-width: 768px) {
+  .order__fieldset {
+    border: none;
+    display: flex;
+    padding: 50px 50px;
+    padding-bottom: 12px;
+  }
+
+  .order__fieldset-gray {
+    background-color: $light-gray;
+  }
+
+  .order__fieldset--color {
+    max-height: 305px;
+  }
+
   .order__type {
     width: 503px;
     margin: 0;
+  }
+
+  .order__legend {
+    width: 165px;
+    padding-top: 15px;
+
+    &::after {
+      display: none;
+    }
   }
 }
