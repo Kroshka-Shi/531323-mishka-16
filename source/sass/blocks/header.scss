@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .header {
     flex-direction: row;
     justify-content: space-between;
@@ -12,9 +12,10 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .header {
-    max-width: 1150px;
+    max-width: $desktop;
     margin: 0 auto;
+    border-bottom: none;
   }
 }

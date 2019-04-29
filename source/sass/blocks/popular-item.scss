@@ -23,6 +23,7 @@
 }
 
 .popular-item__description {
+  margin-top: 20px;
   font-size: 15px;
   line-height: 24px;
   color: $gray;
@@ -51,7 +52,7 @@
 
 .popular-item__pic {
   display: block;
-  margin: 30px 0 22px 0;
+  margin: 30px 0 18px 0;
 }
 
 .popular-item__bottom {
@@ -68,14 +69,14 @@
 }
 
 .popular-item__button {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .popular-item__top {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .popular-item__title {
@@ -86,7 +87,8 @@
     width: 12%;
     margin: 0;
     line-height: 17px;
-    margin-right: 30px;
+    margin-top: 3px;
+    margin-right: 23px;
     text-align: center;
   }
 
@@ -106,15 +108,19 @@
 
   .popular-item__bottom {
     position: absolute;
-    bottom: 47px;
+    bottom: 43px;
     left: 50px;
     margin: 0;
   }
 
   .popular-item__description {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .popular-item__specification--row :last-child {
+    padding-left: 0;
   }
 
   .popular-item__price {
@@ -127,7 +133,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .popular-item {
     min-height: 700px;
     position: relative;
@@ -138,7 +144,8 @@
 
   .popular-item__top {
     justify-content: flex-start;
-    padding-top: 70px;
+    padding-top: 66px;
+    margin-bottom: 42px;
   }
 
   .popular-item__pic {
@@ -155,6 +162,7 @@
     order: 2;
     font-size: 53px;
     margin-left: 48px;
+    letter-spacing: -0.5px;
   }
 
   .popular-item__middle {
@@ -163,7 +171,8 @@
   }
 
   .popular-item__marker {
-    padding-left: 43px;
+    padding-left: 40px;
+    padding-top: 3px;
     margin: 0;
   }
 
@@ -173,7 +182,7 @@
   }
 
   .popular-item__bottom {
-    margin-left: 180px;
-    margin-bottom: 15px;
+    margin-left: 175px;
+    margin-bottom: 20px;
   }
 }

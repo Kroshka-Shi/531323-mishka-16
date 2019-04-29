@@ -43,7 +43,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .cart-list {
     flex-direction: row;
     font-size: 17px;
@@ -72,9 +72,13 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .cart-list {
     order: 3;
     margin: 0;
+  }
+
+  .cart-list__item {
+    padding-left: 32px;
   }
 }

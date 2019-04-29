@@ -58,7 +58,7 @@
 
   <main>
     <section class="catalog">
-      <div class="catalog__title">
+      <div class="title">
         <h1>Каталог товаров</h1>
       </div>
 
@@ -82,7 +82,9 @@
             </div>
             <span class="cart-product__price">1 200 руб.
               <a class="cart-product__button">
-                <img src="img/icon-cart.svg" alt="Добавить в корзину">
+                <svg class="cart-product__pic" width="20.294px" height="18.849px">
+                  <use xlink:href="img/svg-sprite.svg#cart"></use>
+                </svg>
               </a>
             </span>
           </div>
@@ -93,7 +95,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
               <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-              <source srcset="img/photo-toys-mobile@1x.jpg">
+              <source srcset="img/photo-bowl-mobile@1x.jpg">
               <img class="cart-product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
             </picture>
           </a>
@@ -107,7 +109,9 @@
             </div>
             <span class="cart-product__price">690 руб.
               <a class="cart-product__button">
-                <img src="img/icon-cart.svg" alt="Добавить в корзину">
+                <svg class="cart-product__pic" width="20.294px" height="18.849px">
+                  <use xlink:href="img/svg-sprite.svg#cart"></use>
+                </svg>
               </a>
             </span>
           </div>
@@ -132,7 +136,9 @@
             </div>
             <span class="cart-product__price">1 500 руб.
               <a class="cart-product__button">
-                <img src="img/icon-cart.svg" alt="Добавить в корзину">
+                <svg class="cart-product__pic" width="20.294px" height="18.849px">
+                  <use xlink:href="img/svg-sprite.svg#cart"></use>
+                </svg>
               </a>
             </span>
           </div>
@@ -140,13 +146,33 @@
       </ul>
     </section>
 
-    <section class="process hidden">
-      <h2 class="process__title">Процесс производства</h2>
-      <video class="process__video" width="260" height="150" poster="http://placehold.it/150x100">
-      </video>
+    <section class="process">
+
+      <div class="process__video">
+        <svg class="process__video-play" width="100.678px" height="76.891px">
+          <use xlink:href="img/svg-sprite.svg#play"></use>
+        </svg>
+
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+          <img class="process__video-pic" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+        </picture>
+      </div>
+
+      <div class="process__wrap">
+        <svg class="process__title--pic" width="32px" height="32px">
+          <use xlink:href="img/svg-sprite.svg#video"></use>
+        </svg>
+        <h2 class="process__title">Процесс производства</h2>
+      </div>
+
+
+<div class="process__desc-wrap">
       <p class="process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
         как появляются наши товары</p>
-      <a class="process__btn" href="#">Сделать заказ</a>
+      <a class="process__btn page-button" href="#">Сделать заказ</a>
+    </div>
     </section>
   </main>
 
@@ -154,7 +180,7 @@
     <div class="footer__container">
       <a>
         <svg class="footer__pic hidden" width="101.615px" height="34.056px">
-        <use xlink:href="img/svg-sprite.svg#logo-footer"></use>
+          <use xlink:href="img/svg-sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <section class="footer__social">
@@ -162,21 +188,21 @@
           <li class="soc-list__item soc-list__item--insta">
             <a href="#">
               <svg width="21.769px" height="21.334px">
-              <use xlink:href="img/svg-sprite.svg#insta"></use>
+                <use xlink:href="img/svg-sprite.svg#insta"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--fb">
             <a href="#">
-              <svg  width="14.962px" height="27.718px">
-              <use xlink:href="img/svg-sprite.svg#fb"></use>
+              <svg width="14.962px" height="27.718px">
+                <use xlink:href="img/svg-sprite.svg#fb"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--tw">
             <a href="#">
               <svg width="23.494px" height="20.168px">
-              <use xlink:href="img/svg-sprite.svg#twit"></use>
+                <use xlink:href="img/svg-sprite.svg#twit"></use>
               </svg>
             </a>
           </li>
@@ -184,36 +210,38 @@
       </section>
 
       <a class="footer__wrap" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="footer__develop">Разработанно</span>
+        <span class="footer__develop">Разработано</span>
         <svg class="footer__develop footer__develop--pic" width="42px" height="42px">
-        <use xlink:href="img/svg-sprite.svg#academy"></use>
+          <use xlink:href="img/svg-sprite.svg#academy"></use>
         </svg>
       </a>
     </div>
   </footer>
 
   <section class="modal hidden">
-    <h3 class="modal__title">Добавить в корзину</h3>
-    <p>Выберите размер:</p>
-    <form name="size" method="get" action="https://echo.htmlacademy.ru">
-      <ul class="modal__choose size">
-        <li class="size__item">
-          <input type="radio" name="size__item" value="S" id="size__S">
-          <label for="size__S">S</label>
-        </li>
+    <div class="modal__wrap">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p class="modal__desc">Выберите размер:</p>
+      <form class="modal__choose" name="size" method="post" action="https://echo.htmlacademy.ru">
+        <ul class="size">
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="S" id="size__S">
+            <label class="size__label" for="size__S">S</label>
+          </li>
 
-        <li class="size__item">
-          <input type="radio" name="size__item" value="M" id="size__M">
-          <label for="size__M">M</label>
-        </li>
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="M" id="size__M">
+            <label class="size__label" for="size__M">M</label>
+          </li>
 
-        <li class="size__item">
-          <input type="radio" name="size__item" value="L" id="size__L">
-          <label for="size__L">L</label>
-        </li>
-      </ul>
-      <button class="modal_btn" type="submit">Добавить</button>
-    </form>
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="L" id="size__L">
+            <label class="size__label" for="size__L">L</label>
+          </li>
+        </ul>
+        <button class="modal_btn page-button" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
 </body>
 

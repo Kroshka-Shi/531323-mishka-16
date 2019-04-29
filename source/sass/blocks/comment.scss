@@ -1,0 +1,152 @@
+.comment {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__wraper {
+  width: $mobile;
+  margin: 28px auto;
+  margin-bottom: 35px;
+}
+
+.comment::after {
+  content: "";
+  width: 100%;
+  background: url("../img/bg-zigzag-line.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  display: block;
+  height: 23px;
+}
+
+.comment__title {
+  font-size: 24px;
+  margin: 0 30px;
+  margin-bottom: 8px;
+}
+
+.comment__item {
+  padding: 0;
+  margin: 0 30px;
+}
+
+.comment__text {
+  font-family: $f-normal;
+  font-size: 15px;
+  margin: 23px 0;
+  margin-bottom: 25px;
+}
+
+.comment__autor {
+  font-style: normal;
+}
+
+.comment__autor-tag {
+  font-family: $f-normal;
+}
+
+.comment__pagination {
+  margin: 0 30px;
+}
+
+.comment_btn {
+  margin: 0 30px;
+}
+
+@media (min-width: $tablet) {
+  .comment {
+    width: 100%;
+    background: url("../img/review@1x.jpg") no-repeat;
+    position: relative;
+    margin-top: 28px;
+  }
+
+  .comment__wraper {
+    width: $tablet;
+    margin: 0;
+  }
+
+  .comment__item {
+    margin: 0 50px;
+    margin-bottom: 110px;
+  }
+
+  .comment__title {
+    font-size: 42px;
+    margin: 90px 50px;
+    margin-bottom: 60px;
+  }
+
+  .comment__text {
+    font-size: 17px;
+    margin-bottom: 55px;
+  }
+
+  .comment__autor-wraper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment__autor {
+    font-size: 18px;
+  }
+
+  .comment__pagination {
+    position: absolute;
+    right: 20px;
+    bottom: 99px;
+  }
+
+  .comment_btn {
+    width: 175px;
+    position: absolute;
+    top: 82px;
+    right: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .comment {
+    margin: 0 auto;
+    margin-top: 38px;
+    width: $desktop;
+    background-position: 50px 0;
+  }
+
+  .comment__wraper {
+    width: $desktop;
+    margin-bottom: 0;
+  }
+
+  .comment__title {
+    margin-top: 85px;
+    font-size: 52px;
+    margin-bottom: 60px;
+    padding-left: 175px;
+  }
+
+  .comment__item {
+    padding-left: 175px;
+    margin-bottom: 160px;
+  }
+
+  .comment__text {
+    margin-bottom: 35px;
+    padding-right: 75px;
+  }
+
+  .comment__autor {
+    font-size: 17px;
+  }
+
+  .comment__pagination {
+    right: 20px;
+    bottom: 150px;
+  }
+
+  .comment_btn {
+    right: 20px;
+    top: 76px;
+  }
+}

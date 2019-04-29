@@ -19,11 +19,13 @@
 
 .footer__social-list {
   @include indents-zero();
-  width: 260px;
+  width: 141px;
+  margin: 0 auto;
   border-bottom: 1px #e5e5e5 solid;
   display: flex;
   justify-content: center;
   padding-bottom: 18px;
+  padding-top: 2px;
 }
 
 .footer__wrap {
@@ -32,8 +34,9 @@
   /*justify-content: center;*/
   align-items: flex-start;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
   position: relative;
+  width: 260px;
 
   &:hover {
     color: $black-o60;
@@ -46,6 +49,7 @@
 
 .footer__develop {
   margin-left: 37px;
+  letter-spacing: 1.2px;
 }
 
 .footer__develop--pic {
@@ -62,14 +66,14 @@
   opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .footer {
     width: 100%;
     padding: 50px 0;
   }
 
   .footer__container {
-    width: 768px;
+    width: $tablet;
     padding: 0 50px;
     display: flex;
     flex-direction: row;
@@ -82,7 +86,7 @@
     justify-content: space-between;
     align-items: baseline;
     padding-bottom: 0;
-    margin-left: 90px;
+    margin-left: 85px;
   }
 
   .footer__social-list {
@@ -97,12 +101,14 @@
   }
 
   .footer__wrap {
+    width: auto;
     margin: 0;
     top: -5px;
   }
 
   .footer__develop {
     font-size: 19px;
+    letter-spacing: normal;
   }
 
   .footer__develop--pic {
@@ -110,9 +116,9 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .footer__container {
-    width: 1150px;
+    width: $desktop;
     margin: 0 auto;
   }
 }

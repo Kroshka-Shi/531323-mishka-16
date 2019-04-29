@@ -21,7 +21,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .site-list__top {
     display: flex;
     flex-direction: row;
@@ -44,14 +44,14 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .site-list__top {
     position: relative;
     top: 0;
     left: 0;
 
     li {
-      font-size: 16px;
+      font-size: 17px;
     }
   }
 
@@ -60,7 +60,7 @@
   }
 
   .site-list__item {
-    padding-right: 40px;
+    padding-right: 35px;
   }
 
   .site-list__bottom {
@@ -77,7 +77,7 @@
     }
 
     :nth-child(2) {
-      padding-left: 20px;
+      padding-left: 25px;
     }
   }
 }

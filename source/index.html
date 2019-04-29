@@ -67,19 +67,19 @@
         <div class="product__wraper">
           <a class="product__item product__first" href="#">
             <p class="product__item--interior">
-            <span>Предметы <br>интерьера </span>
-            <svg class="product__item--pic" width="40.219px" height="62.411px">
-              <use xlink:href="img/svg-sprite.svg#interior"></use>
-            </svg>
-          </p>
+              <span>Предметы <br>интерьера </span>
+              <svg class="product__item--pic" width="40.219px" height="62.411px">
+                <use xlink:href="img/svg-sprite.svg#interior"></use>
+              </svg>
+            </p>
           </a>
           <a class="product__item product__second" href="#">
             <p class="product__item--toy">
-            <span class="product__title-item"> Детские <br>игрушки </span>
-            <svg class="product__item--pic" width="60px" height="59.62px">
-            <use xlink:href="img/svg-sprite.svg#toy"></use>
-            </svg>
-          </p>
+              <span class="product__title-item"> Детские <br>игрушки </span>
+              <svg class="product__item--pic" width="60px" height="59.62px">
+                <use xlink:href="img/svg-sprite.svg#toy"></use>
+              </svg>
+            </p>
           </a>
         </div>
       </div>
@@ -118,7 +118,7 @@
 
         <div class="popular-item__bottom">
           <span class="popular-item__price">Цена: 990 руб.</span>
-          <a class="popular-item__button page-button">Заказать</a>
+          <a class="popular-item__button js-modal-btn page-button">Заказать</a>
         </div>
       </article>
     </section>
@@ -129,71 +129,89 @@
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--flower">
           <svg class="advantages__pic" width="31.972px" height="37.301px">
-          <use xlink:href="img/svg-sprite.svg#adv-flower"></use>
+            <use xlink:href="img/svg-sprite.svg#adv-flower"></use>
           </svg>
 
           Экологически <br>чистые материалы</li>
         <li class="advantages__item advantages__item--money">
-          <svg class="advantages__pic" width="46.575px" height="27.332px" >
-          <use xlink:href="img/svg-sprite.svg#adv-money"></use>
+          <svg class="advantages__pic" width="46.575px" height="27.332px">
+            <use xlink:href="img/svg-sprite.svg#adv-money"></use>
           </svg>
           Скандинавский стиль<br> по российской цене</li>
         <li class="advantages__item advantages__item--heart">
           <svg class="advantages__pic" width="33.05px" height="27.857px">
-          <use xlink:href="img/svg-sprite.svg#adv-heart"></use>
+            <use xlink:href="img/svg-sprite.svg#adv-heart"></use>
           </svg>
           Увеличивает лайки <br> на фотографиях</li>
         <li class="advantages__item advantages__item--ball">
           <svg class="advantages__pic" width="34.373px" height="34.373px">
-          <use xlink:href="img/svg-sprite.svg#adv-ball"></use>
+            <use xlink:href="img/svg-sprite.svg#adv-ball"></use>
           </svg>
           Связано вручную с <br> любовью и умилением</li>
         <li class="advantages__item advantages__item--rocket">
           <svg class="advantages__pic" width="54.156px" height="23.183px">
-          <use xlink:href="img/svg-sprite.svg#adv-rocket"></use>
+            <use xlink:href="img/svg-sprite.svg#adv-rocket"></use>
           </svg>
           Поддержка отечественного <br> производителя</li>
         <li class="advantages__item advantages__item--gift">
-          <svg class="advantages__pic" width="32.666px" height="32.486px" >
-          <use xlink:href="img/svg-sprite.svg#adv-gift"></use>
+          <svg class="advantages__pic" width="32.666px" height="32.486px">
+            <use xlink:href="img/svg-sprite.svg#adv-gift"></use>
           </svg>
-          Поставляется <br>в подарочной упаковке</li>
+          Поставляется в <br>подарочной упаковке</li>
       </ul>
 
     </section>
-    <article class="comment hidden">
-      <h2 class="comment__title">Отзывы</h2>
-      <blockquote class="comment__item">
-        <p class="comment__text">Я молодая мама, но все равно фотографии не набирали и близко
-          такого количества лайков, как у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="comment__autor"><strong>Анастасия Красильникова</strong></cite>
-        <span class="comment__autor-tag">@misssssiskras</span>
-      </blockquote>
-      <div class="comment__pagination">
-        <button class="comment__pagination-left" type="submit">Предыдущий отзыв</button>
-        <button class="comment__pagination-right" type="submit">Следующий отзыв</button>
-      </div>
 
-      <a class="page-button comment_btn" href="#">Написать</a>
+    <article class="comment">
+      <div class="comment__wraper">
+        <h2 class="comment__title">Отзывы</h2>
+        <blockquote class="comment__item">
+          <p class="comment__text">Я молодая мама, но все равно фотографии не набирали и близко
+            такого количества лайков, как у популярных инстамамочек.
+            В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+            и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <div class="comment__autor-wraper">
+            <cite class="comment__autor"><strong>Анастасия Красильникова</strong></cite>
+            <span class="comment__autor-tag">@misssssiskras</span>
+          </div>
+        </blockquote>
+        <div class="comment__pagination pagination">
+          <button class="pagination__item" type="submit">
+            <svg class="pagination__left" width="50px" height="26.003px">
+              <use xlink:href="img/svg-sprite.svg#left-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Предыдущий отзыв</span></button>
+          <button class="pagination__item pagination__right" type="submit">
+
+            <svg class="pagination__left" width="50px" height="26.003px">
+              <use xlink:href="img/svg-sprite.svg#right-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Следующий отзыв</span></button>
+        </div>
+
+        <a class="page-button comment_btn" href="#">Написать</a>
+      </div>
     </article>
 
-    <section class="contact hidden">
-      <table class="contacts_info">
-        <tr>
-          <td>e-mail:</td>
-          <td>info@mimimishkashop.ru</td>
-        </tr>
-        <tr>
-          <td>адрес:</td>
-          <td>г. Санкт- Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-        </tr>
-      </table>
-      <div class="contact_map">
-        <img src="http://placehold.it/150x100" width="320" height="457" alt="Как попасть к нам">
+    <section class="contact">
+      <h2 class="contact__title">Контакты</h2>
+      <div class="contact__info">
+        <ul class="contact__list">
+          <li class="contact__item-title">e-mail:</li>
+          <li class="contact__item-spec contact__item-spec--line"><a hfef="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru </a></li>
+        </ul>
+        <ul class="contact__list">
+          <li class="contact__item-title">адрес:</li>
+          <li class="contact__item-spec">г. Санкт-Петербург,
+            <br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</li>
+        </ul>
       </div>
-      <a class="page-button contact_btn" href="#">Напишите нам</a>
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036902493793!2d30.321746000910128!3d59.938718091397746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556105530380!5m2!1sru!2sru"
+          width="100%" height="457px" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <a class="page-button contact__btn" href="#">Напишите нам</a>
     </section>
   </main>
 
@@ -201,7 +219,7 @@
     <div class="footer__container">
       <a>
         <svg class="footer__pic hidden" width="101.615px" height="34.056px">
-        <use xlink:href="img/svg-sprite.svg#logo-footer"></use>
+          <use xlink:href="img/svg-sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <section class="footer__social">
@@ -209,21 +227,21 @@
           <li class="soc-list__item soc-list__item--insta">
             <a href="#">
               <svg width="21.769px" height="21.334px">
-              <use xlink:href="img/svg-sprite.svg#insta"></use>
+                <use xlink:href="img/svg-sprite.svg#insta"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--fb">
             <a href="#">
-              <svg  width="14.962px" height="27.718px">
-              <use xlink:href="img/svg-sprite.svg#fb"></use>
+              <svg width="14.962px" height="27.718px">
+                <use xlink:href="img/svg-sprite.svg#fb"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--tw">
             <a href="#">
               <svg width="23.494px" height="20.168px">
-              <use xlink:href="img/svg-sprite.svg#twit"></use>
+                <use xlink:href="img/svg-sprite.svg#twit"></use>
               </svg>
             </a>
           </li>
@@ -233,36 +251,39 @@
       <a class="footer__wrap" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer__develop">Разработано</span>
         <svg class="footer__develop footer__develop--pic" width="42px" height="42px">
-        <use xlink:href="img/svg-sprite.svg#academy"></use>
+          <use xlink:href="img/svg-sprite.svg#academy"></use>
         </svg>
       </a>
     </div>
   </footer>
 
   <section class="modal hidden">
-    <h3 class="modal__title">Добавить в корзину</h3>
-    <p>Выберите размер:</p>
-    <form name="size" method="get" action="https://echo.htmlacademy.ru">
-      <ul class="modal__choose size">
-        <li class="size__item">
-          <input type="radio" name="size__item" value="S" id="size__S">
-          <label for="size__S">S</label>
-        </li>
+    <div class="modal__wrap">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p class="modal__desc">Выберите размер:</p>
+      <form class="modal__choose" name="size" method="post" action="https://echo.htmlacademy.ru">
+        <ul class="size">
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="S" id="size__S">
+            <label class="size__label" for="size__S">S</label>
+          </li>
 
-        <li class="size__item">
-          <input type="radio" name="size__item" value="M" id="size__M">
-          <label for="size__M">M</label>
-        </li>
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="M" id="size__M">
+            <label class="size__label" for="size__M">M</label>
+          </li>
 
-        <li class="size__item">
-          <input type="radio" name="size__item" value="L" id="size__L">
-          <label for="size__L">L</label>
-        </li>
-      </ul>
-      <button class="modal_btn" type="submit">Добавить</button>
-    </form>
+          <li class="size__item">
+            <input class="input size__input" type="radio" name="size__item" value="L" id="size__L">
+            <label class="size__label" for="size__L">L</label>
+          </li>
+        </ul>
+        <button class="modal_btn page-button" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
 
+  <script src="js/js-modal.js"></script>
 </body>
 
 </html>

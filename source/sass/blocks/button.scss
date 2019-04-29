@@ -1,4 +1,5 @@
 .page-button {
+  @include a-zero();
   border: 2px $gray solid;
   display: block;
   width: 260px;
@@ -6,6 +7,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $gray;
+  background-color: $white;
 
   &:hover {
     background-color: $gray;

@@ -3,43 +3,24 @@
   flex-direction: column;
 }
 
-.catalog__title {
-  h1 {
-    text-align: center;
-    font-size: 27px;
-  }
-  width: 100%;
-  margin: 0 auto;
-  padding: 51px 0;
-  background-color: $light-gray;
-}
-
-.catalog__list {
-  @include indents-zero();
-  width: 320px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
-
 .catalog__item {
   margin-top: 30px;
   border: 1px #ececec solid;
   border-top: none;
 }
 
-@media (min-width: 768px) and (max-width: 1149px) {
-  .catalog__title {
-    padding: 70px 0;
+.catalog__list {
+  @include indents-zero();
+  width: $mobile;
+  padding: 0 30px;
+  margin: 0 auto;
+}
 
-    h1 {
-      font-size: 43px;
-    }
-  }
-
+@media (min-width: $tablet) and (max-width: 1149px) {
   .catalog__list {
-    width: 768px;
+    width: $tablet;
     padding: 0 50px;
-    margin: 5px 0;
+    margin: 5px auto;
   }
 
   .catalog__item {
@@ -48,35 +29,14 @@
   }
 }
 
-@media (min-width: 768px) {
-  .catalog__title {
-    position: relative;
-  }
-
-  .catalog__title h1::after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    width: 100%;
-    display: block;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 100%;
-    color: $white;
-    height: 34px;
-  }
-}
-
-
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .catalog__item {
     max-width: 350px;
     margin-right: 48px;
   }
 
   .catalog__list {
-    width: 1150px;
+    width: $desktop;
     padding: 0 50px;
     margin: 0 auto;
     margin-top: 98px;
@@ -86,14 +46,6 @@
 
     :nth-child(3n) {
       margin-right: 0;
-    }
-  }
-
-  .catalog__title {
-    padding: 65px 0;
-
-    h1 {
-      font-size: 53px;
     }
   }
 }

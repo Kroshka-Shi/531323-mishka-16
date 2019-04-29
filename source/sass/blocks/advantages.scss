@@ -1,4 +1,5 @@
 .advantages {
+  width: $mobile;
   margin: 0 auto;
   padding: 0 30px;
   display: flex;
@@ -31,9 +32,9 @@
   left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .advantages {
-    max-width: 768px;
+    width: $tablet;
     padding: 0 50px;
     margin: 0 auto;
     margin-top: 43px;
@@ -86,7 +87,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .advantages {
     margin-top: 66px;
     padding: 0 30px;
@@ -95,5 +96,6 @@
   .advantages__title {
     font-size: 50px;
     letter-spacing: 1px;
+    margin-bottom: 65px;
   }
 }
