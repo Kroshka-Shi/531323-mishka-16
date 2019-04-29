@@ -1,5 +1,5 @@
 .form__wrap {
-  width: 320px;
+  width: $mobile;
   margin: 0 auto;
   padding: 0 30px;
   margin-bottom: 55px;
@@ -13,18 +13,25 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .form__wrap {
     width: 100%;
     padding: 0;
   }
 
   .form__desc {
-    width: 768px;
+    width: $tablet;
     margin: 69px auto;
     margin-bottom: 0;
     padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__desc {
+    margin-top: 112px;
+    padding: 0 32px;
   }
 }

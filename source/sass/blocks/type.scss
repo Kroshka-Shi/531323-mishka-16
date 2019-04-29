@@ -44,7 +44,7 @@
   border-color: $border-gray;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .type {
     margin-top: 20px;
     margin-bottom: 0;
@@ -63,9 +63,15 @@
   }
 
   .type__item:checked + .type__label::after {
-    top: 4px;
+    top: 3px;
     left: 18px;
     width: 21px;
     height: 21px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .type__label {
+    margin-bottom: 40px;
   }
 }

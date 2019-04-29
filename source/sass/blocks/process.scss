@@ -43,7 +43,7 @@
   line-height: 24px;
   font-family: $f-normal;
   margin: 0 34px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 24px;
 }
 
@@ -60,7 +60,7 @@
 .process__video-play {
   position: absolute;
   left: 30%;
-  top: 22%;
+  top: 24%;
   z-index: 1;
 }
 
@@ -71,7 +71,7 @@
   height: auto;
 }
 
-@media (min-width: 768px) and (max-width: 1149px) {
+@media (min-width: $tablet) and (max-width: 1149px) {
   .process {
     width: 668px;
     min-height: 455px;
@@ -83,7 +83,7 @@
 
   .process__wrap {
     justify-content: flex-start;
-    padding: 30px 38px;
+    padding: 38px 40px 30px 40px;
     order: 0;
   }
 
@@ -119,11 +119,11 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .process {
     width: 1050px;
-    margin: 60px auto;
-    margin-bottom: 105px;
+    margin: 58px auto;
+    margin-bottom: 102px;
     flex-direction: row;
     position: relative;
   }
@@ -154,14 +154,14 @@
   .process__desc-wrap {
     width: 360px;
     padding-left: 78px;
-    padding-top: 178px;
+    padding-top: 175px;
   }
 
   .process__desc {
     font-size: 15px;
     margin: 0;
     line-height: 30px;
-    margin-bottom: 42px;
+    margin-bottom: 43px;
   }
 
   .process__btn {

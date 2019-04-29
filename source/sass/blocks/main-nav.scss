@@ -25,7 +25,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .main-nav__top {
     order: -1;
     border: none;
@@ -51,7 +51,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .main-nav__top {
     margin-right: 0;
   }

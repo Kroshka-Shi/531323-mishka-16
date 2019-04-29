@@ -46,22 +46,33 @@
   border-color: $border-gray;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .color {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 40px;
+
+    li {
+      width: 50%;
+    }
 
     li:nth-child(2n) {
-      margin-left: 65px;
+      padding-left: 12px;
     }
   }
 
   .color__label {
+    font-size: 19px;
+    padding-top: 11px;
+
     &::before {
       width: 54px;
       height: 52px;
-      margin: -10px 23px 0 0;
+      margin: -12px 25px 0 0;
     }
   }
 
@@ -71,5 +82,26 @@
     width: 34px;
     height: 22px;
     background-size: 34px 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .color {
+    margin-left: 17px;
+    justify-content: flex-start;
+
+    li {
+      display: block;
+      margin: 0;
+      width: 32.3%;
+    }
+
+    li:nth-child(2n) {
+      padding-left: 0;
+    }
+  }
+
+  .color__label {
+    margin-bottom: 0;
   }
 }

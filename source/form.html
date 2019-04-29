@@ -57,7 +57,7 @@
   </header>
 
   <main class="form">
-    <div class="title">
+    <div class="title title__form">
       <h1>Вязание на заказ</h1>
     </div>
     <div class="form__wrap">
@@ -114,25 +114,27 @@
           </ul>
         </div>
 
-        <div class="order__fieldset">
+        <div class="order__fieldset order__fieldset--personal">
           <legend class="order__legend">ФИО</legend>
-          <p class="order__personal personal">
-            <label for="name">Имя:</label>
-            <input class="personal__item" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-          </p>
+          <div class=" personal">
+            <p class="personal__wrap">
+              <label class="personal__label" for="name">Имя:</label>
+              <input class="personal__item" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+            </p>
 
-          <p class="order__personal personal">
-            <label for="last-name">Фамилия:</label>
-            <input class="personal__item" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
-          </p>
+            <p class="personal__wrap">
+              <label class="personal__label" for="last-name">Фамилия:</label>
+              <input class="personal__item" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
+            </p>
 
-          <p class="order__personal personal">
-            <label for="patron">Отчество:</label>
-            <input class="personal__item" type="text" name="patron" id="patron" placeholder="Отчество, если желаете" required>
-          </p>
+            <p class="personal__wrap">
+              <label class="personal__label" for="patron">Отчество:</label>
+              <input class="personal__item" type="text" name="patron" id="patron" placeholder="Отчество, если желаете" required>
+            </p>
+          </div>
         </div>
 
-        <div class="order__tel order__fieldset">
+        <div class="order__tel order__fieldset order__fieldset-gray">
           <legend class="order__legend">Тел</legend>
           <input class="order__tel-item" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" minlength="10" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
           <svg class="order__tel-pic" width="24.829px" height="24.333px">
@@ -140,7 +142,7 @@
           </svg>
         </div>
 
-        <div class="order__fieldset order__email">
+        <div class="order__fieldset order__email order__fieldset-gray">
           <legend class="order__legend">e-mail</legend>
           <input class="order__email-item" type="email" name="email" id="email" placeholder="Ваш Email*" required>
           <svg class="order__email-pic" width="32px" height="32px">
@@ -148,14 +150,16 @@
           </svg>
         </div>
 
-        <div class="order__fieldset">
+        <div class="order__fieldset order__fieldset--wish">
           <legend class="order__legend order__legend-wish">доп</legend>
           <textarea class="order__wishes" id="order__wishes" placeholder="Опишите все ваши пожелания к заказу" name="wishes" rows="5"></textarea>
         </div>
-        <span class="order__filling">*Поля обязательные для заполнения</span>
-        <button class="order__btn page-button" type="submit">Отправить заказ</button>
-    </div>
-    </form>
+        <div class="order__bottom">
+          <span class="order__filling">*Поля обязательные для заполнения</span>
+          <button class="order__btn page-button" type="submit">Отправить заказ</button>
+          <div>
+          </div>
+      </form>
   </main>
 
   <footer class="footer">
@@ -192,7 +196,7 @@
       </section>
 
       <a class="footer__wrap" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="footer__develop">Разработанно</span>
+        <span class="footer__develop">Разработано</span>
         <svg class="footer__develop footer__develop--pic" width="42px" height="42px">
           <use xlink:href="img/svg-sprite.svg#academy"></use>
         </svg>

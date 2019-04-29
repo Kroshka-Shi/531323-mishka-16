@@ -5,7 +5,7 @@
 }
 
 .comment__wraper {
-  width: 320px;
+  width: $mobile;
   margin: 28px auto;
   margin-bottom: 35px;
 }
@@ -54,7 +54,7 @@
   margin: 0 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .comment {
     width: 100%;
     background: url("../img/review@1x.jpg") no-repeat;
@@ -63,7 +63,7 @@
   }
 
   .comment__wraper {
-    width: 768px;
+    width: $tablet;
     margin: 0;
   }
 
@@ -75,7 +75,7 @@
   .comment__title {
     font-size: 42px;
     margin: 90px 50px;
-    margin-bottom: 57px;
+    margin-bottom: 60px;
   }
 
   .comment__text {
@@ -101,21 +101,21 @@
   .comment_btn {
     width: 175px;
     position: absolute;
-    top: 80px;
+    top: 82px;
     right: 20px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop) {
   .comment {
     margin: 0 auto;
     margin-top: 38px;
-    width: 1150px;
+    width: $desktop;
     background-position: 50px 0;
   }
 
   .comment__wraper {
-    width: 1150px;
+    width: $desktop;
     margin-bottom: 0;
   }
 
@@ -147,5 +147,6 @@
 
   .comment_btn {
     right: 20px;
+    top: 76px;
   }
 }
