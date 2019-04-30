@@ -26,20 +26,20 @@
   }
 }
 
-.cart-list__item--pic {
+.cart-list__item-pic {
   position: relative;
   display: inline-block;
   margin-right: 27px;
   opacity: 0.2;
 }
 
-.cart-list__item:hover .cart-list__item--pic {
+.cart-list__item:hover .cart-list__item-pic {
   opacity: 1;
   fill: $dark-tiffany;
   color: $dark-tiffany;
 }
 
-.cart-list__item:active .cart-list__item--pic {
+.cart-list__item:active .cart-list__item-pic {
   opacity: 0.3;
 }
 
@@ -67,7 +67,7 @@
     }
   }
 
-  .cart-list__item--search {
+  .cart-list__item-search {
     display: none;
   }
 }

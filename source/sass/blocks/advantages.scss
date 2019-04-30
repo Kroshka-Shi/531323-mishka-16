@@ -26,12 +26,6 @@
   position: relative;
 }
 
-.advantages__pic {
-  position: absolute;
-  top: 10px;
-  left: 0;
-}
-
 @media (min-width: $tablet) {
   .advantages {
     width: $tablet;
@@ -41,7 +35,8 @@
   }
 
   .advantages__list {
-    flex-direction: row;
+    min-height: 462px;
+    flex-direction: column;
     flex-wrap: wrap;
 
     :nth-child(n+4) {

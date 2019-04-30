@@ -36,7 +36,8 @@
   border-radius: 50%;
 }
 
-.type__item:hover + .type__label::before {
+.type__item:hover + .type__label::before,
+.type__item:focus + .type__label::before {
   border-color: $tiffany;
 }
 

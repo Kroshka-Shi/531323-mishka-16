@@ -62,7 +62,7 @@
 .contact__map {
   width: 100%;
   height: 457px;
-  background: url("../img/map-mobile@1x.jpg");
+  background: $light-gray url("../img/map-mobile@1x.jpg") no-repeat;
   margin-bottom: 39px;
 }
 
@@ -100,7 +100,7 @@
       top: -25px;
       width: 47px;
       height: 81px;
-      background: url("../img/icon-flag.svg") no-repeat;
+      background: transparent url("../img/icon-flag.svg") no-repeat;
     }
   }
 

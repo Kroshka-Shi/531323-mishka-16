@@ -13,7 +13,7 @@
   <header class="header">
     <nav class="main-nav">
       <div class="main-nav__top top">
-        <a class="top__logo">
+        <a class="top__logo" aria-label="Главная страница сайта">
 
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -24,7 +24,7 @@
 
         <button class="top__toggle" type="button"></button>
       </div>
-      <div class="main-nav__bottom visually-hidden site-list">
+      <div class="main-nav__bottom site-list">
         <ul class="main-nav__list  site-list__top">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
@@ -38,14 +38,14 @@
         <ul class="main-nav__list cart-list">
 
           <li class="cart-list__item cart-list__item--search-marker">
-            <a href="#">
-              <svg class="cart-list__item--pic" width="17.6px" height="17.6px">
+            <a href="#" aria-label="Поиск по сайту">
+              <svg class="cart-list__item-pic" width="17.6px" height="17.6px">
                 <use xlink:href="img/svg-sprite.svg#search"></use>
               </svg>
-              <span class="cart-list__item--search">Поиск по сайту</span></a></li>
+              <span class="cart-list__item-search">Поиск по сайту</span></a></li>
 
           <li class="cart-list__item"><a href="#">
-              <svg class="cart-list__item--pic" width="20.294px" height="18.849px">
+              <svg aria-hidden="true" role="presentation" focusable="false" class="cart-list__item-pic" width="20.294px" height="18.849px">
                 <use xlink:href="img/svg-sprite.svg#cart"></use>
               </svg>
               <span>Корзина: пока пуста</span></a></li>
@@ -66,17 +66,17 @@
         </div>
         <div class="product__wraper">
           <a class="product__item product__first" href="#">
-            <p class="product__item--interior">
+            <p class="product__item-interior">
               <span>Предметы <br>интерьера </span>
-              <svg class="product__item--pic" width="40.219px" height="62.411px">
+              <svg aria-hidden="true" role="presentation" focusable="false" class="product__item-pic" width="40.219px" height="62.411px">
                 <use xlink:href="img/svg-sprite.svg#interior"></use>
               </svg>
             </p>
           </a>
           <a class="product__item product__second" href="#">
-            <p class="product__item--toy">
+            <p class="product__item-toy">
               <span class="product__title-item"> Детские <br>игрушки </span>
-              <svg class="product__item--pic" width="60px" height="59.62px">
+              <svg aria-hidden="true" role="presentation" focusable="false" class="product__item-pic" width="60px" height="59.62px">
                 <use xlink:href="img/svg-sprite.svg#toy"></use>
               </svg>
             </p>
@@ -95,15 +95,15 @@
             Доступны в шести расцветках, и трех размерах.</p>
 
           <table class="popular-item__specification">
-            <tr class="popular-item__specification--row">
+            <tr class="popular-item__specification-row">
               <td>Цвет:</td>
               <td>"Тиффани"/серый</td>
             </tr>
-            <tr class="popular-item__specification--row">
+            <tr class="popular-item__specification-row">
               <td>Диаметр:</td>
               <td>25 см</td>
             </tr>
-            <tr class="popular-item__specification--row">
+            <tr class="popular-item__specification-row">
               <td>Высота:</td>
               <td>15 см</td>
             </tr>
@@ -111,9 +111,13 @@
         </div>
 
         <picture>
+          <source type="image/webp" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+
           <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-          <img class="popular-item__pic" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@1x.jpg 1x img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          <img class="popular-item__pic" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
         </picture>
 
         <div class="popular-item__bottom">
@@ -127,37 +131,38 @@
 
       <h2 class="advantages__title">Коротко о нас:</h2>
       <ul class="advantages__list">
-        <li class="advantages__item advantages__item--flower">
-          <svg class="advantages__pic" width="31.972px" height="37.301px">
+        <li class="advantages__item">
+          <svg aria-hidden="true" role="presentation" focusable="false" class="pic pic__flower" width="31.972px" height="37.301px">
             <use xlink:href="img/svg-sprite.svg#adv-flower"></use>
           </svg>
 
           Экологически <br>чистые материалы</li>
-        <li class="advantages__item advantages__item--money">
-          <svg class="advantages__pic" width="46.575px" height="27.332px">
+        <li class="advantages__item">
+          <svg aria-hidden="true" role="presentation" focusable="false" class="pic pic__money" width="46.575px" height="27.332px">
             <use xlink:href="img/svg-sprite.svg#adv-money"></use>
           </svg>
           Скандинавский стиль<br> по российской цене</li>
-        <li class="advantages__item advantages__item--heart">
-          <svg class="advantages__pic" width="33.05px" height="27.857px">
+        <li class="advantages__item">
+          <svg aria-hidden="true" role="presentation" focusable="false" class="pic pic__heart" width="33.05px" height="27.857px">
             <use xlink:href="img/svg-sprite.svg#adv-heart"></use>
           </svg>
           Увеличивает лайки <br> на фотографиях</li>
-        <li class="advantages__item advantages__item--ball">
-          <svg class="advantages__pic" width="34.373px" height="34.373px">
+        <li class="advantages__item">
+          <svg aria-hidden="true" role="presentation" focusable="false" class="pic pic__ball" width="34.373px" height="34.373px">
             <use xlink:href="img/svg-sprite.svg#adv-ball"></use>
           </svg>
           Связано вручную с <br> любовью и умилением</li>
-        <li class="advantages__item advantages__item--rocket">
-          <svg class="advantages__pic" width="54.156px" height="23.183px">
+        <li class="advantages__item">
+          <svg aria-hidden="true" role="presentation" focusable="false" class="pic pic__rocket" width="54.156px" height="23.183px">
             <use xlink:href="img/svg-sprite.svg#adv-rocket"></use>
           </svg>
           Поддержка отечественного <br> производителя</li>
-        <li class="advantages__item advantages__item--gift">
-          <svg class="advantages__pic" width="32.666px" height="32.486px">
+        <li class="advantages__item">
+          <svg aria-hidden="true" role="presentation" focusable="false" class="pic pic__gift" width="32.666px" height="32.486px">
             <use xlink:href="img/svg-sprite.svg#adv-gift"></use>
           </svg>
           Поставляется в <br>подарочной упаковке</li>
+
       </ul>
 
     </section>
@@ -177,16 +182,18 @@
         </blockquote>
         <div class="comment__pagination pagination">
           <button class="pagination__item" type="submit">
-            <svg class="pagination__left" width="50px" height="26.003px">
+            <svg role="img" aria-labelledby="heading" focusable="false" class="pagination__left" width="50px" height="26.003px">
+              <title id="heading">Показывает предыдущий отзыв</title>
               <use xlink:href="img/svg-sprite.svg#left-arrow"></use>
             </svg>
-            <span class="visually-hidden">Предыдущий отзыв</span></button>
+          </button>
           <button class="pagination__item pagination__right" type="submit">
 
-            <svg class="pagination__left" width="50px" height="26.003px">
+            <svg role="img" aria-labelledby="heading" focusable="false" class="pagination__left" width="50px" height="26.003px">
+              <title id="heading">Показывает следующий отзыв</title>
               <use xlink:href="img/svg-sprite.svg#right-arrow"></use>
             </svg>
-            <span class="visually-hidden">Следующий отзыв</span></button>
+          </button>
         </div>
 
         <a class="page-button comment_btn" href="#">Написать</a>
@@ -225,21 +232,21 @@
       <section class="footer__social">
         <ul class="footer__social-list soc-list">
           <li class="soc-list__item soc-list__item--insta">
-            <a href="#">
+            <a href="#" arila-label="Наша страница в Инстаграмм">
               <svg width="21.769px" height="21.334px">
                 <use xlink:href="img/svg-sprite.svg#insta"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--fb">
-            <a href="#">
+            <a href="#" arila-label="Наша страница в Фейсбуке">
               <svg width="14.962px" height="27.718px">
                 <use xlink:href="img/svg-sprite.svg#fb"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--tw">
-            <a href="#">
+            <a href="#" arila-label="Наша страница в Твиттере">
               <svg width="23.494px" height="20.168px">
                 <use xlink:href="img/svg-sprite.svg#twit"></use>
               </svg>
@@ -248,7 +255,7 @@
         </ul>
       </section>
 
-      <a class="footer__wrap" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__wrap" href="https://htmlacademy.ru/intensive/adaptive" arila-label="Страница сайта профессиональных курсов-интенсив от HTMLAcademy">
         <span class="footer__develop">Разработано</span>
         <svg class="footer__develop footer__develop--pic" width="42px" height="42px">
           <use xlink:href="img/svg-sprite.svg#academy"></use>

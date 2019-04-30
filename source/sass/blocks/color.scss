@@ -33,12 +33,12 @@
   height: 17px;
   margin: 0;
   padding: 0;
-  background-image: url("../../img/icon-tick.svg");
-  background-repeat: no-repeat;
+  background: transparent url("../../img/icon-tick.svg") no-repeat;
   background-size: 23px 17px;
 }
 
-.color__item:hover + .color__label::before {
+.color__item:hover + .color__label::before,
+.color__item:focus + .color__label::before {
   border-color: $tiffany;
 }
 
@@ -89,6 +89,7 @@
   .color {
     margin-left: 17px;
     justify-content: flex-start;
+    align-content: flex-start;
     max-width: 815px;
     margin-top: 6px;
 
@@ -96,6 +97,7 @@
       display: block;
       margin: 0;
       width: 32.3%;
+      margin-bottom: 20px;
     }
 
     li:nth-child(2n) {
