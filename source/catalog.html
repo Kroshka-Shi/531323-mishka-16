@@ -24,7 +24,7 @@
 
         <button class="top__toggle" type="button"></button>
       </div>
-      <div class="main-nav__bottom site-list">
+      <div class="main-nav__bottom visually-hidden site-list">
         <ul class="main-nav__list  site-list__top">
           <li class="site-list__item"><a href="#">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
@@ -66,10 +66,9 @@
         <li class="catalog__item cart-product">
           <a href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
-              <source srcset="img/photo-hare-mobile@1x.jpg">
-              <img class="cart-product__img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="cart-product__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@1x.jpg 1x, img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
             </picture>
           </a>
           <div class="cart-product__wrap">
@@ -81,7 +80,7 @@
               <p class="cart-product_desc">Рост 30 см, вес 200г</p>
             </div>
             <span class="cart-product__price">1 200 руб.
-              <a class="cart-product__button">
+              <a class="cart-product__button js-modal-btn">
                 <svg class="cart-product__pic" width="20.294px" height="18.849px">
                   <use xlink:href="img/svg-sprite.svg#cart"></use>
                 </svg>
@@ -93,10 +92,9 @@
         <li class="catalog__item cart-product">
           <a href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-              <source srcset="img/photo-bowl-mobile@1x.jpg">
-              <img class="cart-product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="cart-product__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@1x.jpg 1x, img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
             </picture>
           </a>
           <div class="cart-product__wrap">
@@ -108,7 +106,7 @@
               <p class="cart-product_desc">Диаметр 15 см, высота 10 см</p>
             </div>
             <span class="cart-product__price">690 руб.
-              <a class="cart-product__button">
+              <a class="cart-product__button js-modal-btn">
                 <svg class="cart-product__pic" width="20.294px" height="18.849px">
                   <use xlink:href="img/svg-sprite.svg#cart"></use>
                 </svg>
@@ -120,10 +118,9 @@
         <li class="catalog__item cart-product">
           <a href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
-              <source srcset="img/photo-toys-mobile@1x.jpg">
-              <img class="cart-product__img" src="img/photo-toys-mobile@1x.jpg" alt="Корзинка для белья">
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="cart-product__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@1x.jpg 1x, img/photo-toys-mobile@2x.jpg 2x" alt="Корзинка для игрушек">
             </picture>
           </a>
           <div class="cart-product__wrap">
@@ -135,7 +132,7 @@
               <p class="cart-product_desc">Диаметр 30 см, высота 30 см</p>
             </div>
             <span class="cart-product__price">1 500 руб.
-              <a class="cart-product__button">
+              <a class="cart-product__button js-modal-btn">
                 <svg class="cart-product__pic" width="20.294px" height="18.849px">
                   <use xlink:href="img/svg-sprite.svg#cart"></use>
                 </svg>
@@ -154,9 +151,9 @@
         </svg>
 
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-          <img class="process__video-pic" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="process__video-pic" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x" alt="Процесс производства">
         </picture>
       </div>
 
@@ -168,11 +165,11 @@
       </div>
 
 
-<div class="process__desc-wrap">
-      <p class="process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-        как появляются наши товары</p>
-      <a class="process__btn page-button" href="#">Сделать заказ</a>
-    </div>
+      <div class="process__desc-wrap">
+        <p class="process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары</p>
+        <a class="process__btn page-button" href="#">Сделать заказ</a>
+      </div>
     </section>
   </main>
 
@@ -243,6 +240,10 @@
       </form>
     </div>
   </section>
+  <script src="js/picturefill.js"></script>
+  <script src="js/js-modal.js"></script>
+  <script src="js/js-menu.js"></script>
+
 </body>
 
 </html>

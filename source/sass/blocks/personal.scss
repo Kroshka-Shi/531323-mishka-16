@@ -43,11 +43,12 @@
 
 @media (min-width: $desktop) {
   .personal {
-    margin-left: 8px;
     width: 695px;
+    margin-left: 8px;
   }
 
   .personal__item {
     margin-left: 23px;
+    padding: 6px 0 13px 15px;
   }
 }

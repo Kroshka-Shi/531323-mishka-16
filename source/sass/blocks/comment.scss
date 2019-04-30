@@ -62,6 +62,13 @@
     margin-top: 28px;
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .comment {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px 457px;
+    }
+  }
+
   .comment__wraper {
     width: $tablet;
     margin: 0;

@@ -62,7 +62,17 @@
   left: 30%;
   top: 24%;
   z-index: 1;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
+
 
 .process__video-pic {
   display: block;

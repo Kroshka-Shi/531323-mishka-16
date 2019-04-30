@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.top__toggle--close {
+  background-image: url("../img/icon-menu-close.svg");
+}
+
 @media (min-width: $tablet) {
   .top__logo {
     padding: 0;
