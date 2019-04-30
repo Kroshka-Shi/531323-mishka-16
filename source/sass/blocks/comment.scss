@@ -13,7 +13,7 @@
 .comment::after {
   content: "";
   width: 100%;
-  background: url("../img/bg-zigzag-line.svg") no-repeat;
+  background: transparent url("../img/bg-zigzag-line.svg") no-repeat;
   background-size: 100% 100%;
   background-position: 0 0;
   display: block;
@@ -57,7 +57,7 @@
 @media (min-width: $tablet) {
   .comment {
     width: 100%;
-    background: url("../img/review@1x.jpg") no-repeat;
+    background: transparent url("../img/review@1x.jpg") no-repeat;
     position: relative;
     margin-top: 28px;
   }

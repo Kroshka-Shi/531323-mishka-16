@@ -38,7 +38,7 @@
   font-family: $f-normal;
 }
 
-.popular-item__specification--row {
+.popular-item__specification-row {
   border-bottom: 1px $border-gray solid;
 
   td {
@@ -119,7 +119,7 @@
     line-height: 30px;
   }
 
-  .popular-item__specification--row :last-child {
+  .popular-item__specification-row :last-child {
     padding-left: 0;
   }
 

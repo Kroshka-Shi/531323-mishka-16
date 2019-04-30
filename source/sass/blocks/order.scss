@@ -94,6 +94,17 @@
   border: 2px $black solid;
   padding: 15px;
   color: $gray;
+  outline: none;
+}
+
+.order__wishes:hover,
+.order__wishes:focus {
+  border: 2px $tiffany solid;
+}
+
+.order__wishes:active {
+  border: 2px $tiffany solid;
+  color: $black;
 }
 
 .order__filling {
@@ -122,7 +133,7 @@
   }
 
   .order__fieldset--color {
-    height: 305px;
+    min-height: 305px;
     padding-bottom: 25px;
   }
 
@@ -233,7 +244,7 @@
   }
 
   .order__fieldset--color {
-    height: 230px;
+    min-height: 230px;
     padding-top: 45px;
     padding-bottom: 25px;
   }
