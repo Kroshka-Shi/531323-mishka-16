@@ -29,8 +29,7 @@
     left: 0;
     width: 100%;
     display: block;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
+    background: transparent url("../img/bg-zigzag-fill.svg") repeat-x;
     background-size: 100%;
     color: $white;
     height: 34px;
