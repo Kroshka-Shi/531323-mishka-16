@@ -66,6 +66,13 @@
   margin-bottom: 39px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .contact__map {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 322px 457px;
+  }
+}
+
 .contact__btn {
   margin: 0 auto;
 }
@@ -127,6 +134,14 @@
   .contact__map {
     width: 100%;
     margin-bottom: 50px;
+    background-image: url("../img/map-tablet@1x.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contact__map {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 768px 457px;
+    }
   }
 
   .contact__btn {
@@ -177,6 +192,14 @@
     width: 525px;
     order: 1;
     margin-bottom: 0;
+    background-image: url("../img/map-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contact__map {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 525px 457px;
+    }
   }
 
   .contact__btn {

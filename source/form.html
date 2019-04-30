@@ -24,7 +24,7 @@
 
         <button class="top__toggle" type="button"></button>
       </div>
-      <div class="main-nav__bottom site-list">
+      <div class="main-nav__bottom visually-hidden site-list">
         <ul class="main-nav__list  site-list__top">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
@@ -136,18 +136,22 @@
 
         <div class="order__tel order__fieldset order__fieldset-gray">
           <legend class="order__legend">Тел</legend>
+          <div class="order__input-wrap">
           <input class="order__tel-item" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" minlength="10" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
           <svg class="order__tel-pic" width="24.829px" height="24.333px">
             <use xlink:href="img/svg-sprite.svg#phone"></use>
           </svg>
         </div>
+        </div>
 
         <div class="order__fieldset order__email order__fieldset-gray">
           <legend class="order__legend">e-mail</legend>
+          <div class="order__input-wrap">
           <input class="order__email-item" type="email" name="email" id="email" placeholder="Ваш Email*" required>
           <svg class="order__email-pic" width="32px" height="32px">
             <use xlink:href="img/svg-sprite.svg#email"></use>
           </svg>
+        </div>
         </div>
 
         <div class="order__fieldset order__fieldset--wish">
@@ -203,6 +207,8 @@
       </a>
     </div>
   </footer>
+  <script src="js/picturefill.js"></script>
+  <script src="js/js-menu.js"></script>
 </body>
 
 </html>
