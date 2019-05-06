@@ -42,11 +42,12 @@
   border-bottom: 1px $border-gray solid;
 
   td {
+    width: 100px;
     padding: 7px 0;
   }
 
   :last-child {
-    padding-left: 18px;
+    width: auto;
   }
 }
 

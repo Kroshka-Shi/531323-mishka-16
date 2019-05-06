@@ -32,6 +32,7 @@
 }
 
 .process__title-pic {
+  fill: $tiffany;
   display: block;
   flex-shrink: 0;
   margin-right: 24px;
@@ -114,6 +115,10 @@
     left: 43%;
     top: 41%;
     z-index: 1;
+  }
+
+  .process__desc-wrap {
+    width: 668px;
   }
 
   .process__desc {

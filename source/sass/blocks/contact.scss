@@ -26,6 +26,10 @@
 
 .contact__item-spec {
   position: relative;
+
+  a {
+    @include a-zero();
+  }
 }
 
 .contact__item-spec--line {
@@ -100,7 +104,7 @@
       top: -25px;
       width: 47px;
       height: 81px;
-      background: transparent url("../img/icon-flag.svg") no-repeat;
+      background: transparent url("../img/flag.svg") no-repeat;
     }
   }
 
