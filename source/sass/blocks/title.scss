@@ -22,7 +22,7 @@
 }
 
 @media (min-width: $tablet) {
-  .title h1::after {
+  .title::after {
     content: "";
     position: absolute;
     bottom: -12px;

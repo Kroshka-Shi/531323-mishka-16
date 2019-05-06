@@ -36,7 +36,7 @@
 
   .advantages__list {
     min-height: 462px;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 
     :nth-child(n+4) {

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -39,15 +39,14 @@
 
           <li class="cart-list__item cart-list__item--search-marker">
             <a href="#" aria-label="Поиск по сайту">
-              <svg aria-hidden="true" role="presentation" focusable="false"
-              class="cart-list__item-pic" width="17.6px" height="17.6px">
-                <use xlink:href="img/svg-sprite.svg#search"></use>
+              <svg aria-hidden="true" role="presentation" focusable="false" class="cart-list__item-pic" width="17.6px" height="17.6px">
+                <use xlink:href="img/svg-sprite.svg#icon-search"></use>
               </svg>
               <span class="cart-list__item-search">Поиск по сайту</span></a></li>
 
           <li class="cart-list__item"><a href="#">
               <svg class="cart-list__item-pic" width="20.294px" height="18.849px">
-                <use xlink:href="img/svg-sprite.svg#cart"></use>
+                <use xlink:href="img/svg-sprite.svg#icon-cart"></use>
               </svg>
               <span>Корзина: пока пуста</span></a></li>
         </ul>
@@ -66,7 +65,7 @@
 
       <form class="order" method="get" action="https://echo.htmlacademy.ru">
         <div class="order__fieldset">
-          <legend class="order__legend">Тип</legend>
+          <p class="order__legend">Тип</p>
           <ul class="order__ul order__type type">
             <li>
               <input class="input type__item" type="radio" name="type" id="interior" value="interior" checked>
@@ -80,7 +79,7 @@
         </div>
 
         <div class="order__fieldset order__fieldset--color order__fieldset-gray">
-          <legend class="order__legend">Цвет</legend>
+          <p class="order__legend">Цвет</p>
 
           <ul class=" order__ul order__color color">
             <li>
@@ -116,7 +115,7 @@
         </div>
 
         <div class="order__fieldset order__fieldset--personal">
-          <legend class="order__legend">ФИО</legend>
+          <p class="order__legend">ФИО</p>
           <div class=" personal">
             <p class="personal__wrap">
               <label class="personal__label" for="name">Имя:</label>
@@ -136,78 +135,84 @@
         </div>
 
         <div class="order__tel order__fieldset order__fieldset-gray">
-          <legend class="order__legend">Тел</legend>
+          <p class="order__legend">Тел</p>
           <div class="order__input-wrap">
             <input class="order__tel-item" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" minlength="10" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
             <svg class="order__tel-pic" width="24.829px" height="24.333px">
-              <use xlink:href="img/svg-sprite.svg#phone"></use>
+              <use xlink:href="img/svg-sprite.svg#icon-phone"></use>
             </svg>
           </div>
         </div>
 
         <div class="order__fieldset order__email order__fieldset-gray">
-          <legend class="order__legend">e-mail</legend>
+          <p class="order__legend">e-mail</p>
           <div class="order__input-wrap">
             <input class="order__email-item" type="email" name="email" id="email" placeholder="Ваш Email*" required>
             <svg class="order__email-pic" width="32px" height="32px">
-              <use xlink:href="img/svg-sprite.svg#email"></use>
+              <use xlink:href="img/svg-sprite.svg#icon-email"></use>
             </svg>
           </div>
         </div>
 
         <div class="order__fieldset order__fieldset--wish">
-          <legend class="order__legend order__legend-wish">доп</legend>
+          <p class="order__legend order__legend-wish">доп</p>
           <textarea class="order__wishes" id="order__wishes" placeholder="Опишите все ваши пожелания к заказу" name="wishes" rows="5"></textarea>
         </div>
         <div class="order__bottom">
           <span class="order__filling">*Поля обязательные для заполнения</span>
           <button class="order__btn page-button" type="submit">Отправить заказ</button>
-          <div>
-          </div>
+        </div>
       </form>
+    </div>
+
   </main>
 
   <footer class="footer">
     <div class="footer__container">
       <a>
         <svg class="footer__pic hidden" width="101.615px" height="34.056px">
-          <use xlink:href="img/svg-sprite.svg#logo-footer"></use>
+          <use xlink:href="img/svg-sprite.svg#icon-logo-footer"></use>
         </svg>
       </a>
       <section class="footer__social">
         <ul class="footer__social-list soc-list">
           <li class="soc-list__item soc-list__item--insta">
-            <a href="#" arila-label="Наша страница в Инстаграмм">
+            <a href="#" aria-label="Наша страница в Инстаграмм">
               <svg width="21.769px" height="21.334px">
-                <use xlink:href="img/svg-sprite.svg#insta"></use>
+                <use xlink:href="img/svg-sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--fb">
-            <a href="#" arila-label="Наша страница в Фейсбуке">
+            <a href="#" aria-label="Наша страница в Фейсбуке">
               <svg width="14.962px" height="27.718px">
-                <use xlink:href="img/svg-sprite.svg#fb"></use>
+                <use xlink:href="img/svg-sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--tw">
-            <a href="#" arila-label="Наша страница в Твиттере">
+            <a href="#" aria-label="Наша страница в Твиттере">
               <svg width="23.494px" height="20.168px">
-                <use xlink:href="img/svg-sprite.svg#twit"></use>
+                <use xlink:href="img/svg-sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
         </ul>
       </section>
 
-      <a class="footer__wrap" href="https://htmlacademy.ru/intensive/adaptive" arila-label="Страница сайта профессиональных курсов-интенсив от HTMLAcademy">
+      <a class="footer__wrap" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Страница сайта профессиональных курсов-интенсив от HTMLAcademy">
         <span class="footer__develop">Разработано</span>
         <svg class="footer__develop footer__develop--pic" width="42px" height="42px">
-          <use xlink:href="img/svg-sprite.svg#academy"></use>
+          <use xlink:href="img/svg-sprite.svg#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
+
+  <script src="js/svg4everybody.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
   <script src="js/picturefill.js"></script>
   <script src="js/js-menu.js"></script>
 </body>
