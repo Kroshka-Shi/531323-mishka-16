@@ -2,6 +2,8 @@
   margin: 0;
   margin-bottom: 1px;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .order__ul {
@@ -10,10 +12,10 @@
 
 .order__legend {
   display: block;
+  width: 100%;
   margin: 0;
   text-transform: uppercase;
   color: $tiffany;
-  padding-right: 20px;
   position: relative;
 
   &::after {
@@ -29,8 +31,12 @@
 
 .order__tel {
   position: relative;
-  margin-top: 27px;
+  margin-top: 8px;
   margin-bottom: 26px;
+}
+
+.order__input-wrap {
+  width: 100%;
 }
 
 .order__email {
@@ -38,19 +44,17 @@
   margin-bottom: 26px;
 }
 
+.order__email-item,
 .order__tel-item {
   @include placeholder {
     font-family: $f-normal;
     font-size: 19px;
   }
-}
-
-.order__email-item,
-.order__tel-item {
+  font-size: 19px;
   width: 100%;
   border: none;
   border-bottom: 2px $black solid;
-  padding: 15px 0;
+  padding: 10px 0 13px;
   font-family: $f-normal;
   color: $gray;
 
@@ -62,6 +66,12 @@
   }
 }
 
+.order__email-item {
+  @include placeholder {
+    font-size: 17px;
+  }
+}
+
 .order__tel-pic,
 .order__email-pic {
   position: absolute;
@@ -69,6 +79,10 @@
   top: 40px;
   fill: $gray;
   opacity: 0.6;
+}
+
+.order__email-pic {
+  right: 5px;
 }
 
 .order__email-item:hover + .order__email-pic,
@@ -85,16 +99,22 @@
   fill: $tiffany;
 }
 
+.order__fieldset--wish {
+  margin-bottom: 9px;
+}
+
 .order__legend-wish {
   margin-bottom: 18px;
 }
 
 .order__wishes {
   font-family: $f-normal;
+  font-size: 17px;
+  line-height: 20px;
   width: 100%;
   height: 142px;
   border: 2px $black solid;
-  padding: 15px;
+  padding: 10px 15px;
   color: $gray;
   outline: none;
 }
@@ -126,6 +146,7 @@
   .order__fieldset {
     border: none;
     display: flex;
+    flex-wrap: nowrap;
     padding: 50px 50px;
     padding-bottom: 12px;
   }
@@ -159,7 +180,7 @@
 
   .order__input-wrap {
     width: 100%;
-    margin-left: 40px;
+    margin-left: 42px;
     position: relative;
   }
 
@@ -173,21 +194,21 @@
   .order__email-item {
     width: 100%;
     background-color: $light-gray;
-    padding: 17px;
+    padding: 18px 15px 12px;
   }
 
   .order__tel-pic {
     right: 25px;
-    top: 13px;
+    top: 16px;
   }
 
   .order__email-pic {
-    top: 13px;
+    top: 16px;
     right: 20px;
   }
 
   .order__email {
-    padding-top: 9px;
+    padding-top: 5px;
     padding-bottom: 50px;
   }
 
@@ -199,12 +220,12 @@
   }
 
   .order__fieldset--wish {
-    padding-top: 25px;
+    padding-top: 23px;
   }
 
   .order__legend-wish {
     padding-top: 10px;
-    margin-right: 40px;
+    margin-right: 45px;
   }
 
   .order__wishes {
@@ -269,7 +290,7 @@
   .order__tel-item,
   .order__email-item {
     margin-left: 0;
-    padding: 22px 0 17px 20px;
+    padding: 22px 0 10px 20px;
   }
 
   .order__tel-pic {
@@ -283,7 +304,7 @@
   }
 
   .order__email-item {
-    padding: 20px 0 13px 20px;
+    padding: 15px 0 13px 20px;
   }
 
   .order__email-pic {

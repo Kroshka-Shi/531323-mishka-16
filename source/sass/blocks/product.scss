@@ -221,6 +221,11 @@
 }
 
 @media (min-width: $desktop) {
+  .product::after {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
   .product__popular,
   .product__wraper {
     width: $desktop;

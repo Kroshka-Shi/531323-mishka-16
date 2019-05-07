@@ -1,12 +1,17 @@
+.personal {
+  width: 100%;
+}
+
 .personal__item {
   @include placeholder {
     font-family: $f-normal;
+    font-size: 17px;
   }
 
   width: 100%;
   border: none;
   border-bottom: 2px $black solid;
-  padding: 10px 0 14px 0;
+  padding: 10px 0 15px 0;
   font-family: $f-normal;
 
   &:hover,
@@ -15,6 +20,16 @@
     border-color: $tiffany;
     outline: none;
   }
+}
+
+.personal__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.personal__label {
+  width: 100%;
 }
 
 @media (min-width: $tablet) {
@@ -26,17 +41,23 @@
   }
 
   .personal__wrap {
-    width: 100%;
-    display: flex;
     margin: 15px 0;
     font-size: 19px;
-    margin-bottom: 19px;
+    margin-bottom: 18px;
+    flex-wrap: nowrap;
+  }
+
+  .personal__label {
+    width: auto;
   }
 
   .personal__item {
+    @include placeholder {
+      font-size: 19px;
+    }
     width: 100%;
-    margin-left: 30px;
-    padding: 6px 0 13px 12px;
+    margin-left: 27px;
+    padding: 0 0 14px 17px;
     font-size: 19px;
   }
 }
@@ -49,6 +70,6 @@
 
   .personal__item {
     margin-left: 23px;
-    padding: 6px 0 13px 15px;
+    padding: 5px 0 10px 15px;
   }
 }

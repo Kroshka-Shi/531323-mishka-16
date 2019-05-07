@@ -1,6 +1,7 @@
 .size {
   @include indents-zero();
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 
   :last-child {
@@ -10,7 +11,6 @@
 
 .size__item {
   width: 82px;
-  font-size: 17px;
   color: $gray;
   margin-right: 7px;
 }
@@ -19,6 +19,7 @@
   display: block;
   text-align: center;
   width: 100%;
+  font-size: 17px;
   padding: 12px 0;
   border: 2px $border-gray solid;
 }

@@ -4,7 +4,7 @@
   left: 0;
   z-index: 999;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: hsla(0, 0%, 100%, 0.9);
@@ -27,7 +27,7 @@
   margin: 0 auto;
   padding: 0 30px;
   width: $mobile;
-  height: 340px;
+  min-height: 340px;
   background-color: white;
   border: 1px #ececec solid;
   top: 100px;
