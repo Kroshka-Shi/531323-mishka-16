@@ -11,6 +11,7 @@
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
+    "gulp-minify": "^3.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-rename": "^1.4.0",
@@ -27,7 +28,11 @@
     "test": "npm run editorconfig && npm run stylelint",
     "optimize": "gulp optimize",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+
+    "clean": "gulp clean",
+    "copy": "gulp copy",
+    "js": "gulp js"
   },
   "browserslist": [
     "last 2 versions",
