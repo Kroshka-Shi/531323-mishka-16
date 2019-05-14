@@ -101,7 +101,7 @@
   .popular-item__pic {
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 25px;
     width: 333px;
     height: 404px;
     display: block;
@@ -109,7 +109,7 @@
 
   .popular-item__bottom {
     position: absolute;
-    bottom: 43px;
+    bottom: 48px;
     left: 50px;
     margin: 0;
   }
@@ -118,6 +118,10 @@
     margin-bottom: 33px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .popular-item__specification {
+    margin-bottom: 140px;
   }
 
   .popular-item__specification-row :last-child {
@@ -185,6 +189,6 @@
 
   .popular-item__bottom {
     margin-left: 175px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
 }

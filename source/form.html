@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/svg-sprite.svg"></include>
+  </div>
   <header class="header">
     <nav class="main-nav">
       <div class="main-nav__top top">
@@ -42,13 +45,13 @@
           <li class="cart-list__item cart-list__item--search-marker">
             <a href="#" aria-label="Поиск по сайту">
               <svg aria-hidden="true" role="presentation" focusable="false" class="cart-list__item-pic" width="17.6px" height="17.6px">
-                <use xlink:href="img/svg-sprite.svg#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
               <span class="cart-list__item-search">Поиск по сайту</span></a></li>
 
           <li class="cart-list__item"><a href="#">
               <svg class="cart-list__item-pic" width="20.294px" height="18.849px">
-                <use xlink:href="img/svg-sprite.svg#icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
               </svg>
               <span>Корзина: пока пуста</span></a></li>
         </ul>
@@ -59,7 +62,7 @@
   </header>
 
   <main class="form">
-    <div class="title title__form">
+    <div class="title title--form">
       <h1>Вязание на заказ</h1>
     </div>
     <div class="form__wrap">
@@ -68,7 +71,7 @@
       <form class="order" method="get" action="https://echo.htmlacademy.ru">
         <div class="order__fieldset">
           <p class="order__legend">Тип</p>
-          <ul class="order__ul order__type type">
+          <ul class="order__ul type">
             <li>
               <input class="input type__item" type="radio" name="type" id="interior" value="interior" checked>
               <label class="type__label" for="interior">Аксессуар для интерьера</label>
@@ -83,7 +86,7 @@
         <div class="order__fieldset order__fieldset--color order__fieldset-gray">
           <p class="order__legend">Цвет</p>
 
-          <ul class=" order__ul order__color color">
+          <ul class=" order__ul color">
             <li>
               <input class="input color__item" type="checkbox" name="color" id="white" value="white" checked>
               <label class="color__label" for="white">Белый</label>
@@ -141,23 +144,23 @@
           <div class="order__input-wrap">
             <input class="order__tel-item" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" minlength="10" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
             <svg class="order__tel-pic" width="24.829px" height="24.333px">
-              <use xlink:href="img/svg-sprite.svg#icon-phone"></use>
+              <use xlink:href="#icon-phone"></use>
             </svg>
           </div>
         </div>
 
         <div class="order__fieldset order__email order__fieldset-gray">
-          <p class="order__legend">e-mail</p>
+          <label class="order__legend">e-mail</label>
           <div class="order__input-wrap">
             <input class="order__email-item" type="email" name="email" id="email" placeholder="Ваш Email*" required>
             <svg class="order__email-pic" width="32px" height="32px">
-              <use xlink:href="img/svg-sprite.svg#icon-email"></use>
+              <use xlink:href="#icon-email"></use>
             </svg>
           </div>
         </div>
 
         <div class="order__fieldset order__fieldset--wish">
-          <p class="order__legend order__legend-wish">доп</p>
+          <p class="order__legend order__legend--wish">доп</p>
           <textarea class="order__wishes" id="order__wishes" placeholder="Опишите все ваши пожелания к заказу" name="wishes" rows="5"></textarea>
         </div>
         <div class="order__bottom">
@@ -171,9 +174,9 @@
 
   <footer class="footer">
     <div class="footer__container">
-      <a>
+      <a href="#" aria-label="Главная страница сайта Мишка">
         <svg class="footer__pic hidden" width="101.615px" height="34.056px">
-          <use xlink:href="img/svg-sprite.svg#icon-logo-footer"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <section class="footer__social">
@@ -181,21 +184,21 @@
           <li class="soc-list__item soc-list__item--insta">
             <a href="#" aria-label="Наша страница в Инстаграмм">
               <svg width="21.769px" height="21.334px">
-                <use xlink:href="img/svg-sprite.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--fb">
             <a href="#" aria-label="Наша страница в Фейсбуке">
               <svg width="14.962px" height="27.718px">
-                <use xlink:href="img/svg-sprite.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="soc-list__item soc-list__item--tw">
             <a href="#" aria-label="Наша страница в Твиттере">
               <svg width="23.494px" height="20.168px">
-                <use xlink:href="img/svg-sprite.svg#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -205,7 +208,7 @@
       <a class="footer__wrap" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Страница сайта профессиональных курсов-интенсив от HTMLAcademy">
         <span class="footer__develop">Разработано</span>
         <svg class="footer__develop footer__develop--pic" width="42px" height="42px">
-          <use xlink:href="img/svg-sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>

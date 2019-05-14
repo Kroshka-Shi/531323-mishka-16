@@ -94,7 +94,7 @@
 
   .cart-product__wrap {
     width: 50%;
-    height: 334px;
+    min-height: 334px;
     padding: 30px 30px 0 30px;
     margin: 0;
     display: flex;
@@ -125,13 +125,13 @@
 
 @media (min-width: $desktop) {
   .cart-product {
-    height: 660px;
+    min-height: 660px;
   }
 
   .cart-product__wrap {
     padding-top: 25px;
     width: 256px;
-    height: 198px;
+    min-height: 198px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

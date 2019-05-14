@@ -24,6 +24,7 @@
   line-height: 22px;
   margin-bottom: 24px;
   position: relative;
+  max-width: 250px;
 }
 
 @media (min-width: $tablet) {
@@ -31,7 +32,7 @@
     width: $tablet;
     padding: 0 50px;
     margin: 0 auto;
-    margin-top: 43px;
+    margin-top: 40px;
   }
 
   .advantages__list {
@@ -54,7 +55,7 @@
     font-size: 20px;
     margin-right: 0;
     margin-bottom: 55px;
-    width: 50%;
+    max-width: 50%;
 
     &--flower {
       order: 1;
