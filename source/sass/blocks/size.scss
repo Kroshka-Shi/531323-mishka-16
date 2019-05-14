@@ -10,7 +10,7 @@
 }
 
 .size__item {
-  width: 82px;
+  min-width: 81px;
   color: $gray;
   margin-right: 7px;
 }
@@ -35,6 +35,6 @@
 
 @media (min-width: $tablet) {
   .size__item {
-    width: 112px;
+    min-width: 112px;
   }
 }
