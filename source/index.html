@@ -201,10 +201,7 @@
             <br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</li>
         </ul>
       </div>
-      <div class="contact__map">
-        <iframe class="contact__map-frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036902493793!2d30.321746000910128!3d59.938718091397746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556105530380!5m2!1sru!2sru"
-          allowfullscreen></iframe>
+      <div class="contact__map" id="map">
       </div>
       <a class="page-button contact__btn" href="#">Напишите нам</a>
     </section>
@@ -277,6 +274,30 @@
       </form>
     </div>
   </section>
+
+  <script>
+    function initMap() {
+      var coordinat = {
+        lat: 59.938864,
+        lng: 30.323015
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: coordinat,
+        zoom: 17
+      });
+      var marker = new google.maps.Marker({
+        position: coordinat,
+        map: map,
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+        icon: {
+        url: "./img/map-pin.svg",
+        scaledSize: new google.maps.Size(67, 100)
+      }
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgCDmrG7Q4Zp4Os4FJ9vYdV3Z96K54Pwo&callback=initMap" async defer></script>
   <script src="js/svg4everybody.min.js"></script>
   <script>
     svg4everybody();
